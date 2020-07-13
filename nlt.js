@@ -12,6 +12,7 @@ const start = (say, sendButton) => {
 };
 
 const state = (payload, say, sendButton) => {
+	
 	// help user navigate back
 	function backtrack(category, language) {
 		sendButton('What\'s next?', [{title: 'Continue learning vocabulary', payload: 'a'},
@@ -19,6 +20,16 @@ const state = (payload, say, sendButton) => {
 		{title: 'Learn the Word in Another 🗣️', payload: language},
 		{title: 'Return to menu', payload: '0'}, {title: 'Exit', payload: 'no'}]);
 	}
+
+	// help user choose a language to learn the chosen word in
+	function chooseLanguage(wordID) {
+		sendButton('What language would you like to learn the expression in?',
+			[{title: 'A. 🇦🇪', payload: 'AR' + wordID}, {title: 'B. 🇨🇳', payload: 'CN' + wordID},
+			{title: 'C. 🇫🇷', payload: 'FR' + wordID}, {title: 'D. 🇮🇹', payload: 'IT' + wordID},
+			{title: 'E. 🇯🇵', payload: 'JP' + wordID}, {title: 'F. 🇪🇸', payload: 'ES' + wordID}]
+			);
+	}
+
 
     // choose activity: vocabulary or quiz?
 	if (payload === '0') {
@@ -58,11 +69,7 @@ const state = (payload, say, sendButton) => {
 
 		// ************************ Different Languages for Annoyed (b1)*********************//
 		if (payload === 'b1') {
-			sendButton('What language would you like to learn the expression in?',
-			[{title: 'A. 🇦🇪', payload: 'ARb1'}, {title: 'B. 🇨🇳', payload: 'CNb1'},
-			{title: 'C. 🇫🇷', payload: 'FRb1'}, {title: 'D. 🇮🇹', payload: 'ITb1'},
-			{title: 'E. 🇯🇵', payload: 'JPb1'}, {title: 'F. 🇪🇸', payload: 'ESb1'}]
-			);
+			chooseLanguage('b1')
 		}
 		// Arabic for annoyed
 		if(payload === 'ARb1') {
@@ -103,11 +110,7 @@ const state = (payload, say, sendButton) => {
 
 		// ************************ Different Languages for happy (b2)**************************************//
 		if (payload === 'b2') {
-			sendButton('What language would you like to learn the expression in?',
-			[{title: 'A. 🇦🇪', payload: 'ARb2'}, {title: 'B. 🇨🇳', payload: 'CNb2'},
-			{title: 'C. 🇫🇷', payload: 'FRb2'}, {title: 'D. 🇮🇹', payload: 'ITb2'},
-			{title: 'E. 🇯🇵', payload: 'JPb2'}, {title: 'F. 🇪🇸', payload: 'ESb2'}]
-			);
+			chooseLanguage('b2')
 		}
 		// Arabic for happy
 		if(payload === 'ARb2') {
