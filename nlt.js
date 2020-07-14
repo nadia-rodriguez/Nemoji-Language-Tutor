@@ -15,10 +15,10 @@ const state = (payload, say, sendButton) => {
 	
 	// help user navigate back
 	function backtrack(category, language) {
-		sendButton('What\'s next?', [{title: 'Continue learning vocabulary', payload: 'a'},
-		{title: 'Return to Category', payload: category},
-		{title: 'Learn the Word in Another 🗣️', payload: language},
-		{title: 'Return to menu', payload: '0'}, {title: 'Exit', payload: 'no'}]);
+		sendButton('What\'s next?', [{title: 'Pick Another Category', payload: 'a'},
+		{title: 'Back to the Same Category', payload: category},
+		{title: 'Learn it in Another 🗣️', payload: language},
+		{title: 'Return to Menu', payload: '0'}, {title: 'Exit', payload: 'no'}]);
 	}
 
 	// help user choose a language to learn the chosen word in
