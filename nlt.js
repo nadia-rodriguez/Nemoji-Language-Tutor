@@ -151,6 +151,70 @@ const state = (payload, say, sendButton) => {
 
 
 
+		//***********************************************************************************/
+		// ************************* Category 2: Animals (a2) ******************************//
+		//*********************************************************************************/
+		// all animals payload starts with c
+		if (payload === 'a2') {
+			sendButton('What animal would you like to learn?',
+			[{title: 'A. 🐶', payload: 'c1'}, {title: 'B. 😺', payload: 'c2'},
+			{title: 'C. 🐴', payload: 'c3'}, {title: 'D. 🐟', payload: 'c4'},
+			{title: 'E. 🐵', payload: 'c5'}, {title: 'F. 🐯', payload: 'c6'}, 
+			{title: 'G. 🐷', payload: 'c7'}, {title: 'H. 🐇', payload: 'c8'}, 
+			{title: 'I. 🐔', payload: 'c9'}, {title: 'J. 🐍', payload: 'c10'}, 
+			{title: 'K. 🐬', payload: 'c11'}, {title: 'L. 🐝', payload: 'c12'}]
+			);
+		}
+
+
+		//***********************************************************************************/
+		// ************************* Category 3: food (a3) ******************************//
+		//*********************************************************************************/
+		// all food payload starts with 
+		if (payload === 'a3') {
+			sendButton('Which food would you like to learn?',
+			[{title: 'A. 🍺', payload: 'd1'}, {title: 'B. 🍎', payload: 'd2'},
+			{title: 'C. 🍊', payload: 'd3'}, {title: 'D. 🍔', payload: 'd4'},
+			{title: 'E. 🍿', payload: 'd5'}, {title: 'F. 🍪', payload: 'd6'}, 
+			{title: 'G. 🍣', payload: 'd7'}, {title: 'H. 🍰', payload: 'd8'}, 
+			{title: 'I. 🥔', payload: 'd9'}, {title: 'J. 🍅', payload: 'd10'}, 
+			{title: 'K. 🍖', payload: 'd11'}, {title: 'L. 🥛', payload: 'd12'}]
+			);
+		}
+
+
+
+		//***********************************************************************************/
+		// ************************* Category 3: Transportation (a4) ******************************//
+		//*********************************************************************************/
+		// all transportations payload starts with e
+		if (payload === 'a4') {
+			sendButton('Which transportation would you like to learn?',
+			[{title: 'A. 🚗', payload: 'e1'}, {title: 'B. 🚕', payload: 'e2'},
+			{title: 'C. 🚝', payload: 'e3'}, {title: 'D. 🚲', payload: 'e4'},
+			{title: 'E. 🏍️', payload: 'e5'}, {title: 'F. 🚢', payload: 'e6'}, 
+			{title: 'G. 🚁', payload: 'e7'}, {title: 'H. ✈️', payload: 'e8'}, 
+			{title: 'I. 🚌', payload: 'e9'} ]
+			);
+		}
+
+
+
+		//***********************************************************************************/
+		// ************************* Category 4: Location (a5) ******************************//
+		//*********************************************************************************/
+		// all location payload starts with f
+		if (payload === 'a5') {
+			sendButton('What expression would you like to learn?',
+			[{title: 'A. 🐶', payload: 'c1'}, {title: 'B. 😺', payload: 'c2'},
+			{title: 'C. 🐴', payload: 'c3'}, {title: 'D. 🐟', payload: 'c4'},
+			{title: 'E. 🐵', payload: 'c5'}, {title: 'F. 🐯', payload: 'c6'}, 
+			{title: 'G. 🐷', payload: 'c7'}, {title: 'H. 🐇', payload: 'c8'}, 
+			{title: 'I. 🐔', payload: 'c9'}, {title: 'J. 🐍', payload: 'c10'}, 
+			{title: 'K. 🐬', payload: 'c11'}, {title: 'L. 🐝', payload: 'c12'}]
+			);
+		}
+
 
 
 
