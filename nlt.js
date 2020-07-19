@@ -410,7 +410,152 @@ const state = (payload, say, sendButton) => {
 			{title: 'K. 🐬', payload: 'c11'}, {title: 'L. 🐝', payload: 'c12'}]
 			);
 		}
+	
+		// ************************ Different Languages for Dog (c1)*********************//
+		if (payload === 'c1') {
+			chooseLanguage('c1')
+		}
+		// Arabic for Dog
+		if(payload === 'ARc1') {
+			say(["🐶", "Dog", "الكلب", {attachment: 'audio',url: "https://bit.ly/2VKqoBG"}]).then(()=>{backtrack('a2', 'c1')});
+		}
+		// Chinese for Dog
+		if(payload === 'CNc1') {
+			say(["🐶", "Dog", "狗", {attachment: 'audio',url: "https://bit.ly/2C5VkFp "}]).then(()=>{backtrack('a2', 'c1')});
+		}
+		// French for Dog
+		if(payload === 'FRc1') {
+			say(["🐶", "Dog", "chien", {attachment: 'audio',url: "https://bit.ly/30qgSoW"}]).then(()=> {backtrack('a2', 'c1')});
+		}
+		// Italian for Dog
+		if(payload === 'ITc1') {
+			say(["🐶", "Dog", 'cane', {attachment: 'audio',url: "https://bit.ly/3f0Hcw0"}]).then(()=>{backtrack('a2', 'c1')});
+		}
+		// Japanese for Dog
+		if(payload === 'JPc1') {
+			say(["🐶", "Dog", '犬', {attachment: 'audio',url: "https://bit.ly/31O7Zrq"}]).then(()=>{backtrack('a2', 'c1')});
+		}
+		// Spanish for Dog
+		if(payload === 'ESc1') {
+			say(["🐶", "Dog", 'perro', {attachment: 'audio',url: "https://bit.ly/3iBvpWX"}]).then(()=>{backtrack('a2', 'c1')});
+		}
 
+		// ************************ Different Languages for Cat (c2)*********************//
+		if (payload === 'c2') {
+			chooseLanguage('c2')
+		}
+		// Arabic for Cat
+		if(payload === 'ARc2') {
+			say(["😺", "Cat", "قط", {attachment: 'audio',url: "https://bit.ly/3f4mE5D"}]).then(()=>{backtrack('a2', 'c2')});
+		}
+		// Chinese for Cat
+		if(payload === 'CNc2') {
+			say(["😺", "Cat", "猫", {attachment: 'audio',url: "https://bit.ly/2NSv980"}]).then(()=>{backtrack('a2', 'c2')});
+		}
+		// French for Cat
+		if(payload === 'FRc2') {
+			say(["😺", "Cat", "chat", {attachment: 'audio',url: "https://bit.ly/32xRPCV"}]).then(()=> {backtrack('a2', 'c2')});
+		}
+		// Italian for Cat
+		if(payload === 'ITc2') {
+			say(["😺", "Cat", 'gatto', {attachment: 'audio',url: "https://bit.ly/3ixudUG"}]).then(()=>{backtrack('a2', 'c2')});
+		}
+		// Japanese for Cat
+		if(payload === 'JPc2') {
+			say(["😺", "Cat", 'ネコ', {attachment: 'audio',url: "https://bit.ly/3iA5PSc"}]).then(()=>{backtrack('a2', 'c2')});
+		}
+		// Spanish for Cat
+		if(payload === 'ESc2') {
+			say(["😺", "Cat", 'gato', {attachment: 'audio',url: "https://bit.ly/3iyruu9"}]).then(()=>{backtrack('a2', 'c2')});
+		}
+	
+		// ************************ Different Languages for Horse (c3)*********************//
+		if (payload === 'c3') {
+			chooseLanguage('c3')
+		}
+		// Arabic for Horse
+		if(payload === 'ARc3') {
+			say(["🐴", "Horse", "حصان", {attachment: 'audio',url: "https://bit.ly/3iysSNm"}]).then(()=>{backtrack('a2', 'c3')});
+		}
+		// Chinese for Horse
+		if(payload === 'CNc3') {
+			say(["🐴", "Horse", "马", {attachment: 'audio',url: "https://bit.ly/3gkDiOx"}]).then(()=>{backtrack('a2', 'c3')});
+		}
+		// French for Horse
+		if(payload === 'FRc3') {
+			say(["🐴", "Horse", "cheval", {attachment: 'audio',url: "https://bit.ly/39d8zAO"}]).then(()=> {backtrack('a2', 'c3')});
+		}
+		// Italian for Horse
+		if(payload === 'ITc3') {
+			say(["🐴", "Horse", 'cavallo', {attachment: 'audio',url: "https://bit.ly/2Z1CDfp"}]).then(()=>{backtrack('a2', 'c3')});
+		}
+		// Japanese for Horse
+		if(payload === 'JPc3') {
+			say(["🐴", "Horse", 'うま', {attachment: 'audio',url: "https://bit.ly/38ttL5j"}]).then(()=>{backtrack('a2', 'c3')});
+		}
+		// Spanish for Horse
+		if(payload === 'ESc3') {
+			say(["🐴", "Horse", 'caballo', {attachment: 'audio',url: "https://bit.ly/3iB5DC6"}]).then(()=>{backtrack('a2', 'c3')});
+		}
+	
+		// ************************ Different Languages for Fish (c4)*********************//
+		if (payload === 'c4') {
+			chooseLanguage('c4')
+		}
+		// Arabic for Fish
+		if(payload === 'ARc4') {
+			say(["🐟", "Fish", "سمك", {attachment: 'audio',url: "https://bit.ly/31Kef3y"}]).then(()=>{backtrack('a2', 'c4')});
+		}
+		// Chinese for Fish
+		if(payload === 'CNc4') {
+			say(["🐟", "Fish", "鱼", {attachment: 'audio',url: "https://bit.ly/3dSCFKI"}]).then(()=>{backtrack('a2', 'c4')});
+		}
+		// French for Fish
+		if(payload === 'FRc4') {
+			say(["🐟", "Fish", "poisson", {attachment: 'audio',url: "https://bit.ly/32yBdLn"}]).then(()=> {backtrack('a2', 'c4')});
+		}
+		// Italian for Fish
+		if(payload === 'ITc4') {
+			say(["🐟", "Fish", 'pesce', {attachment: 'audio',url: "https://bit.ly/2Z08OeT"}]).then(()=>{backtrack('a2', 'c4')});
+		}
+		// Japanese for Fish
+		if(payload === 'JPc4') {
+			say(["🐟", "Fish", '魚', {attachment: 'audio',url: "https://bit.ly/38GlJWV"}]).then(()=>{backtrack('a2', 'c4')});
+		}
+		// Spanish for Fish
+		if(payload === 'ESc4') {
+			say(["🐟", "Fish", 'pez', {attachment: 'audio',url: "https://bit.ly/2VQ3WHp"}]).then(()=>{backtrack('a2', 'c4')});
+		}
+	
+		// ************************ Different Languages for Monkey (c5)*********************//
+		if (payload === 'c5') {
+			chooseLanguage('c5')
+		}
+		// Arabic for Monkey
+		if(payload === 'ARc5') {
+			say(["🐵", "Monkey", "قرد", {attachment: 'audio',url: "https://bit.ly/3iENoft"}]).then(()=>{backtrack('a2', 'c5')});
+		}
+		// Chinese for Monkey
+		if(payload === 'CNc5') {
+			say(["🐵", "Monkey", "猴子", {attachment: 'audio',url: "https://bit.ly/2C5uLA8"}]).then(()=>{backtrack('a2', 'c5')});
+		}
+		// French for Monkey
+		if(payload === 'FRc5') {
+			say(["🐵", "Monkey", "singe", {attachment: 'audio',url: "https://bit.ly/30ovmWs"}]).then(()=> {backtrack('a2', 'c5')});
+		}
+		// Italian for Monkey
+		if(payload === 'ITc5') {
+			say(["🐵", "Monkey", 'scimmia', {attachment: 'audio',url: "https://bit.ly/31M195L"}]).then(()=>{backtrack('a2', 'c5')});
+		}
+		// Japanese for Monkey
+		if(payload === 'JPc5') {
+			say(["🐵", "Monkey", '猿', {attachment: 'audio',url: "https://bit.ly/3ffC1bL"}]).then(()=>{backtrack('a2', 'c5')});
+		}
+		// Spanish for Monkey
+		if(payload === 'ESc5') {
+			say(["🐵", "Monkey", 'mono', {attachment: 'audio',url: "https://bit.ly/2VOJxCJ"}]).then(()=>{backtrack('a2', 'c5')});
+		}
+	
 
 		//***********************************************************************************/
 		// ************************* Category 3: food (a3) ******************************//
