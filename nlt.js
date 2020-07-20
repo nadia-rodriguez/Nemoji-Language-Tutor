@@ -746,6 +746,122 @@ const state = (payload, say, sendButton) => {
 		if (payload === 'ESd6'){
 			say(["🍪", "Cookie", 'galleta', {attachment: 'audio', url: "https://bit.ly/2ZCHYss"}]).then(()=>{backtrack('a3', 'd6')})
 		}
+	
+		// ************************ Different Languages for Sushi (d7)*********************//
+		if (payload === 'd7'){
+			chooseLanguage('d7')
+		}
+		// Arabic for Sushi
+		if (payload === 'ARd7'){
+			say(["🍣", "Sushi", 'سوشي', {attachment: 'audio', url: "https://bit.ly/2VMt0ik"}]).then(()=>{backtrack('a3', 'd7')})
+		}
+		// Chinese for Sushi
+		if (payload === 'CNd7'){
+			say(["🍣", "Sushi", '寿司', {attachment: 'audio', url: "https://bit.ly/2C1BviN"}]).then(()=>{backtrack('a3', 'd7')})
+		}
+		// French for Sushi
+		if (payload === 'FRd7'){
+			say(["🍣", "Sushi", 'sushi', {attachment: 'audio', url: "google.com"}]).then(()=>{backtrack('a3', 'd7')})
+		}
+		// Italian for Sushi
+		if (payload === 'ITd7'){
+			say(["🍣", "Sushi", 'sushi', {attachment: 'audio', url: "https://bit.ly/3ixkjlV"}]).then(()=>{backtrack('a3', 'd7')})
+		}
+		// Japanese for Sushi
+		if (payload === 'JPd7'){
+			say(["🍣", "Sushi", '寿司', {attachment: 'audio', url: "https://bit.ly/31PpfNc"}]).then(()=>{backtrack('a3', 'd7')})
+		}
+		// Spanish for Sushi
+		if (payload === 'ESd7'){
+			say(["🍣", "Sushi", 'sushi', {attachment: 'audio', url: "https://bit.ly/31OwtkA"}]).then(()=>{backtrack('a3', 'd7')})
+		}
+	
+		// ************************ Different Languages for Cake (d8)*********************//
+		if (payload === 'd8'){
+			chooseLanguage('d8')
+		}
+		// Arabic for Sushi
+		if (payload === 'ARd8'){
+			say(["🍰", "Cake", 'كيك', {attachment: 'audio', url: "https://bit.ly/3iAltNF"}]).then(()=>{backtrack('a3', 'd8')})
+		}
+		// Chinese for Sushi
+		if (payload === 'CNd8'){
+			say(["🍰", "Cake", '蛋糕', {attachment: 'audio', url: "https://bit.ly/3glLe23"}]).then(()=>{backtrack('a3', 'd8')})
+		}
+		// French for Sushi
+		if (payload === 'FRd8'){
+			say(["🍰", "Cake", 'gâteau', {attachment: 'audio', url: "google.com"}]).then(()=>{backtrack('a3', 'd8')})
+		}
+		// Italian for Sushi
+		if (payload === 'ITd8'){
+			say(["🍰", "Cake", 'torta', {attachment: 'audio', url: "https://bit.ly/38uHJnd"}]).then(()=>{backtrack('a3', 'd8')})
+		}
+		// Japanese for Sushi
+		if (payload === 'JPd8'){
+			say(["🍰", "Cake", 'ケーキ', {attachment: 'audio', url: "https://bit.ly/3f1fcs8"}]).then(()=>{backtrack('a3', 'd8')})
+		}
+		// Spanish for Sushi
+		if (payload === 'ESd8'){
+			say(["🍰", "Cake", 'pastel', {attachment: 'audio', url: "https://bit.ly/31OQ7wS"}]).then(()=>{backtrack('a3', 'd8')})
+		}
+	
+		// ************************ Different Languages for Potato (d9)*********************//
+		if (payload === 'd9'){
+			chooseLanguage('d9')
+		}
+		// Arabic for Potato
+		if (payload === 'ARd9'){
+			say(["🥔", "Potato", 'البطاطس', {attachment: 'audio', url: "https://bit.ly/38CnxA8"}]).then(()=>{backtrack('a3', 'd9')})
+		}
+		// Chinese for Potato
+		if (payload === 'CNd9'){
+			say(["🥔", "Potato", '土豆', {attachment: 'audio', url: "https://bit.ly/3gyxCkr"}]).then(()=>{backtrack('a3', 'd9')})
+		}
+		// French for Potato
+		if (payload === 'FRd9'){
+			say(["🥔", "Potato", 'patate', {attachment: 'audio', url: "google.com"}]).then(()=>{backtrack('a3', 'd9')})
+		}
+		// Italian for Potato
+		if (payload === 'ITd9'){
+			say(["🥔", "Potato", 'patate', {attachment: 'audio', url: "https://bit.ly/2Cd5tjF"}]).then(()=>{backtrack('a3', 'd9')})
+		}
+		// Japanese for Potato
+		if (payload === 'JPd9'){
+			say(["🥔", "Potato", 'じゃがいも', {attachment: 'audio', url: "https://bit.ly/3is0qfY"}]).then(()=>{backtrack('a3', 'd9')})
+		}
+		// Spanish for Potato
+		if (payload === 'ESd9'){
+			say(["🥔", "Potato", 'papa', {attachment: 'audio', url: "https://bit.ly/2VOh9AA"}]).then(()=>{backtrack('a3', 'd9')})
+		}
+	
+		// ************************ Different Languages for Tomato (d10)*********************//
+		if (payload === 'd10'){
+			chooseLanguage('d10')
+		}
+		// Arabic for Potato
+		if (payload === 'ARd10'){
+			say(["🍅", "Tomato", 'طماطم', {attachment: 'audio', url: "https://bit.ly/31M9ZAD"}]).then(()=>{backtrack('a3', 'd10')})
+		}
+		// Chinese for Potato
+		if (payload === 'CNd10'){
+			say(["🍅", "Tomato", '番茄', {attachment: 'audio', url: "https://bit.ly/2YXljIp"}]).then(()=>{backtrack('a3', 'd10')})
+		}
+		// French for Potato
+		if (payload === 'FRd10'){
+			say(["🍅", "Tomato", 'tomate', {attachment: 'audio', url: "google.com"}]).then(()=>{backtrack('a3', 'd10')})
+		}
+		// Italian for Potato
+		if (payload === 'ITd10'){
+			say(["🍅", "Tomato", 'pomodoro', {attachment: 'audio', url: "https://bit.ly/3e1mmeB"}]).then(()=>{backtrack('a3', 'd10')})
+		}
+		// Japanese for Potato
+		if (payload === 'JPd10'){
+			say(["🍅", "Tomato", 'トマト', {attachment: 'audio', url: "https://bit.ly/3f3VnjJ"}]).then(()=>{backtrack('a3', 'd10')})
+		}
+		// Spanish for Potato
+		if (payload === 'ESd10='){
+			say(["🍅", "Tomato", 'tomate', {attachment: 'audio', url: "https://bit.ly/2VMtCo8"}]).then(()=>{backtrack('a3', 'd10')})
+		}
 
 		//***********************************************************************************/
 		// ************************* Category 3: Transportation (a4) ******************************//
