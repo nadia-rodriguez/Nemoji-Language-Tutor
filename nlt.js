@@ -560,7 +560,7 @@ const state = (payload, say, sendButton) => {
 		//***********************************************************************************/
 		// ************************* Category 3: food (a3) ******************************//
 		//*********************************************************************************/
-		// all food payload starts with 
+		// all food payload starts with d
 		if (payload === 'a3') {
 			sendButton('Which food would you like to learn?',
 			[{title: 'A. 🍺', payload: 'd1'}, {title: 'B. 🍎', payload: 'd2'},
@@ -571,7 +571,181 @@ const state = (payload, say, sendButton) => {
 			{title: 'K. 🍖', payload: 'd11'}, {title: 'L. 🥛', payload: 'd12'}]
 			);
 		}
-
+	
+		// ************************ Different Languages for Beer (d1)*********************//
+	
+		if (payload === 'd1'){
+			chooseLanguage('d1');
+		}
+		// Arabic for Beer
+		if (payload === 'ARd1'){
+			say(["🍺", "Beer", 'بيرة', {attachment: 'audio', url: "https://bit.ly/2O1Eudu"}]).then(()=>{backtrack('a3', 'd1')})
+		}
+		// Chinese for Beer
+		if (payload === 'CNd1'){
+			say(["🍺", "Beer", '啤酒', {attachment: 'audio', url: "https://bit.ly/2NQPxq3"}]).then(()=>{backtrack('a3', 'd1')})
+		}
+		// French for Beer
+		if (payload === 'FRd1'){
+			say(["🍺", "Beer", 'bière', {attachment: 'audio', url: "https://www.google.com/"}]).then(()=>{backtrack('a3', 'd1')}) //
+		}
+		// Italian for Beer
+		if (payload === 'ITd1'){
+			say(["🍺", "Beer", 'bira', {attachment: 'audio', url: "https://bit.ly/2NXaCzh"}]).then(()=>{backtrack('a3', 'd1')})
+		}
+		// Japanese for Beer
+		if (payload === 'JPd1'){
+			say(["🍺", "Beer", 'ビール', {attachment: 'audio', url: "https://bit.ly/2Z1fObn"}]).then(()=>{backtrack('a3', 'd1')})
+		}
+		// Spanish for Beer
+		if (payload === 'ESd1'){
+			say(["🍺", "Beer", 'cerveza', {attachment: 'audio', url: "https://bit.ly/2ZFcguH"}]).then(()=>{backtrack('a3', 'd1')})
+		}
+		
+		// ************************ Different Languages for Apple (d2)*********************//
+		if (payload === 'd2'){
+			chooseLanguage('d2');
+		}
+		// Arabic for Apple
+		if (payload === 'ARd2'){
+			say(["🍎", "Apple", 'تفاحة', {attachment: 'audio', url: "https://bit.ly/3iAjyID"}]).then(()=>{backtrack('a3', 'd2')})
+		}
+		// Chinese for Apple
+		if (payload === 'CNd2'){
+			say(["🍎", "Apple", '苹果', {attachment: 'audio', url: "https://bit.ly/3eQPPZQ"}]).then(()=>{backtrack('a3', 'd2')})
+		}
+		// French for Apple
+		if (payload === 'FRd1'){
+			say(["🍎", "Apple", 'pomme', {attachment: 'audio', url: "https://www.google.com/"}]).then(()=>{backtrack('a3', 'd2')}) //
+		}
+		// Italian for Apple
+		if (payload === 'ITd1'){
+			say(["🍎", "Apple", 'mela', {attachment: 'audio', url: "https://bit.ly/2O0lbl3"}]).then(()=>{backtrack('a3', 'd2')})
+		}
+		// Japanese for Apple
+		if (payload === 'JPd1'){
+			say(["🍎", "Apple", '林檎', {attachment: 'audio', url: "https://bit.ly/3e9o8uk"}]).then(()=>{backtrack('a3', 'd2')})
+		}
+		// Spanish for Beer
+		if (payload === 'ESd1'){
+			say(["🍎", "Apple", 'manzana', {attachment: 'audio', url: "https://bit.ly/3iIudkS"}]).then(()=>{backtrack('a3', 'd2')})
+		}
+	
+		// ************************ Different Languages for Orange (d3)*********************//
+		if (payload === 'd3'){
+			chooseLanguage('d3')
+		}
+		// Arabic for Orange
+		if (payload === 'ARd3'){
+			say(["🍊", "Orange", 'البرتقالي', {attachment: 'audio', url: "https://bit.ly/3irDQnII"}]).then(()=>{backtrack('a3', 'd3')})
+		}
+		// Chinese for Orange
+		if (payload === 'CNd3'){
+			say(["🍊", "Orange", '橙子', {attachment: 'audio', url: "https://bit.ly/3eTDILK"}]).then(()=>{backtrack('a3', 'd3')})
+		}
+		// French for Orange
+		if (payload === 'FRd3'){
+			say(["🍊", "Orange", 'orange', {attachment: 'audio', url: "google.com"}]).then(()=>{backtrack('a3', 'd3')})
+		}
+		// Italian for Orange
+		if (payload === 'ITd3'){
+			say(["🍊", "Orange", 'Arancia', {attachment: 'audio', url: "https://bit.ly/3f7wEes"}]).then(()=>{backtrack('a3', 'd3')})
+		}
+		// Japanese for Orange
+		if (payload === 'JPd3'){
+			say(["🍊", "Orange", 'オレンジ', {attachment: 'audio', url: "https://bit.ly/2NWJfFc"}]).then(()=>{backtrack('a3', 'd3')})
+		}
+		// Spanish for Orange
+		if (payload === 'ESd3'){
+			say(["🍊", "Orange", 'naranja', {attachment: 'audio', url: "https://bit.ly/2Deff5R"}]).then(()=>{backtrack('a3', 'd3')})
+		}
+	
+		// ************************ Different Languages for Hamburger (d4)*********************//
+		if (payload === 'd4'){
+			chooseLanguage('d4')
+		}
+		// Arabic for Hamburger
+		if (payload === 'ARd4'){
+			say(["🍔", "Hamburger", 'همبرغر', {attachment: 'audio', url: "https://bit.ly/38sp3Vp"}]).then(()=>{backtrack('a3', 'd4')})
+		}
+		// Chinese for Hamburger
+		if (payload === 'CNd4'){
+			say(["🍔", "Hamburger", '汉堡包', {attachment: 'audio', url: "https://bit.ly/2C0qdva"}]).then(()=>{backtrack('a3', 'd4')})
+		}
+		// French for Hamburger
+		if (payload === 'FRd4'){
+			say(["🍔", "Hamburger", 'hamburger', {attachment: 'audio', url: "google.com"}]).then(()=>{backtrack('a3', 'd4')})
+		}
+		// Italian for Hamburger
+		if (payload === 'ITd4'){
+			say(["🍔", "Hamburger", 'hamburger', {attachment: 'audio', url: "https://bit.ly/31ZwK4j"}]).then(()=>{backtrack('a3', 'd4')})
+		}
+		// Japanese for Hamburger
+		if (payload === 'JPd4'){
+			say(["🍔", "Hamburger", 'ハンバーガー', {attachment: 'audio', url: "https://bit.ly/2VOXJLQ"}]).then(()=>{backtrack('a3', 'd4')})
+		}
+		// Spanish for Hamburger
+		if (payload === 'ESd4'){
+			say(["🍔", "Hamburger", 'hamburguesa', {attachment: 'audio', url: "https://bit.ly/31Mgnru"}]).then(()=>{backtrack('a3', 'd4')})
+		}
+	
+		// ************************ Different Languages for Popcorn (d5)*********************//
+		if (payload === 'd5'){
+			chooseLanguage('d5')
+		}
+		// Arabic for Popcorn
+		if (payload === 'ARd5'){
+			say(["🍿", "Popcorn", 'الفشار', {attachment: 'audio', url: "https://bit.ly/2O4cpCl"}]).then(()=>{backtrack('a3', 'd5')})
+		}
+		// Chinese for Popcorn
+		if (payload === 'CNd5'){
+			say(["🍿", "Popcorn", '爆米花', {attachment: 'audio', url: "https://bit.ly/3dSNyMA"}]).then(()=>{backtrack('a3', 'd5')})
+		}
+		// French for Popcorn
+		if (payload === 'FRd5'){
+			say(["🍿", "Popcorn", 'pop corn', {attachment: 'audio', url: "google.com"}]).then(()=>{backtrack('a3', 'd5')})
+		}
+		// Italian for Popcorn
+		if (payload === 'ITd5'){
+			say(["🍿", "Popcorn", 'popcorn', {attachment: 'audio', url: "https://bit.ly/2VNfTOb"}]).then(()=>{backtrack('a3', 'd5')})
+		}
+		// Japanese for Popcorn
+		if (payload === 'JPd5'){
+			say(["🍿", "Popcorn", 'ポップコーン', {attachment: 'audio', url: "https://bit.ly/3iyMdy4"}]).then(()=>{backtrack('a3', 'd5')})
+		}
+		// Spanish for Popcorn
+		if (payload === 'ESd5'){
+			say(["🍿", "Popcorn", 'palomitas de maiz', {attachment: 'audio', url: "https://bit.ly/3ixuS8z"}]).then(()=>{backtrack('a3', 'd5')})
+		}
+	
+		// ************************ Different Languages for Cookie (d6)*********************//
+		if (payload === 'd6'){
+			chooseLanguage('d6')
+		}
+		// Arabic for Cookie
+		if (payload === 'ARd6'){
+			say(["🍪", "Cookie", 'بسكويت', {attachment: 'audio', url: "https://bit.ly/3f9d0Pq"}]).then(()=>{backtrack('a3', 'd6')})
+		}
+		// Chinese for Cookie
+		if (payload === 'CNd6'){
+			say(["🍪", "Cookie", '曲奇', {attachment: 'audio', url: "https://bit.ly/2YUs0L9"}]).then(()=>{backtrack('a3', 'd6')})
+		}
+		// French for Cookie
+		if (payload === 'FRd6'){
+			say(["🍪", "Cookie", 'biscuit', {attachment: 'audio', url: "google.com"}]).then(()=>{backtrack('a3', 'd6')})
+		}
+		// Italian for Cookie
+		if (payload === 'ITd6'){
+			say(["🍪", "Cookie", 'biscotto', {attachment: 'audio', url: "https://bit.ly/2ZI83pU"}]).then(()=>{backtrack('a3', 'd6')})
+		}
+		// Japanese for Cookie
+		if (payload === 'JPd6'){
+			say(["🍪", "Cookie", 'クッキー', {attachment: 'audio', url: "https://bit.ly/3iyYyCb"}]).then(()=>{backtrack('a3', 'd6')})
+		}
+		// Spanish for Cookie
+		if (payload === 'ESd6'){
+			say(["🍪", "Cookie", 'galleta', {attachment: 'audio', url: "https://bit.ly/2ZCHYss"}]).then(()=>{backtrack('a3', 'd6')})
+		}
 
 		//***********************************************************************************/
 		// ************************* Category 3: Transportation (a4) ******************************//
