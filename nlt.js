@@ -838,29 +838,87 @@ const state = (payload, say, sendButton) => {
 		if (payload === 'd10'){
 			chooseLanguage('d10')
 		}
-		// Arabic for Potato
+		// Arabic for Tomato
 		if (payload === 'ARd10'){
 			say(["🍅", "Tomato", 'طماطم', {attachment: 'audio', url: "https://bit.ly/31M9ZAD"}]).then(()=>{backtrack('a3', 'd10')})
 		}
-		// Chinese for Potato
+		// Chinese for Tomato
 		if (payload === 'CNd10'){
 			say(["🍅", "Tomato", '番茄', {attachment: 'audio', url: "https://bit.ly/2YXljIp"}]).then(()=>{backtrack('a3', 'd10')})
 		}
-		// French for Potato
+		// French for Tomato
 		if (payload === 'FRd10'){
 			say(["🍅", "Tomato", 'tomate', {attachment: 'audio', url: "google.com"}]).then(()=>{backtrack('a3', 'd10')})
 		}
-		// Italian for Potato
+		// Italian for Tomato
 		if (payload === 'ITd10'){
 			say(["🍅", "Tomato", 'pomodoro', {attachment: 'audio', url: "https://bit.ly/3e1mmeB"}]).then(()=>{backtrack('a3', 'd10')})
 		}
-		// Japanese for Potato
+		// Japanese for Tomato
 		if (payload === 'JPd10'){
 			say(["🍅", "Tomato", 'トマト', {attachment: 'audio', url: "https://bit.ly/3f3VnjJ"}]).then(()=>{backtrack('a3', 'd10')})
 		}
-		// Spanish for Potato
-		if (payload === 'ESd10='){
+		// Spanish for Tomato
+		if (payload === 'ESd10'){
 			say(["🍅", "Tomato", 'tomate', {attachment: 'audio', url: "https://bit.ly/2VMtCo8"}]).then(()=>{backtrack('a3', 'd10')})
+		}
+	
+		// ************************ Different Languages for Meat (d11)*********************//
+		if (payload === 'd11'){
+			chooseLanguage('d11')
+		}
+		// Arabic for Meat
+		if (payload === 'ARd11'){
+			say(["🍖", "Meat", 'لحم', {attachment: 'audio', url: "https://bit.ly/2BzlQaC"}]).then(()=>{backtrack('a3', 'd11')})
+		}
+		// Chinese for Meat
+		if (payload === 'CNd11'){
+			say(["🍖", "Meat", '肉', {attachment: 'audio', url: "https://bit.ly/38mkI69"}]).then(()=>{backtrack('a3', 'd11')})
+		}
+		// French for Meat
+		if (payload === 'FRd11'){
+			say(["🍖", "Meat", 'viande', {attachment: 'audio', url: "google.com"}]).then(()=>{backtrack('a3', 'd11')})
+		}
+		// Italian for Meat
+		if (payload === 'ITd11'){
+			say(["🍖", "Meat", 'carne', {attachment: 'audio', url: "https://bit.ly/2YZnV8z"}]).then(()=>{backtrack('a3', 'd11')})
+		}
+		// Japanese for Meat
+		if (payload === 'JPd11'){
+			say(["🍖", "Meat", '肉', {attachment: 'audio', url: "https://bit.ly/2BGozyT"}]).then(()=>{backtrack('a3', 'd11')})
+		}
+		// Spanish for Meat
+		if (payload === 'ESd11'){
+			say(["🍖", "Meat", 'carne', {attachment: 'audio', url: "https://bit.ly/3ixKo4a"}]).then(()=>{backtrack('a3', 'd11')})
+		}
+	
+		// ************************ Different Languages for Milk (d12)*********************//
+		if (payload === 'd12'){
+			chooseLanguage('d12')
+		}
+		// Arabic for Milk
+		if (payload === 'ARd12'){
+			say(["🍖", "Milk", 'حليب', {attachment: 'audio', url: "https://bit.ly/38BBxtN"}]).then(()=>{backtrack('a3', 'd12')})
+		}
+		// Chinese for Milk
+		if (payload === 'CNd12'){
+			say(["🍖", "Milk", '牛奶', {attachment: 'audio', url: "https://bit.ly/2CXgw0O"}]).then(()=>{backtrack('a3', 'd12')})
+		}
+		// French for Milk
+		if (payload === 'FRd12'){
+			say(["🍖", "Milk", 'lait', {attachment: 'audio', url: "google.com"}]).then(()=>{backtrack('a3', 'd12')})
+		}
+		// Italian for Milk
+		if (payload === 'ITd12'){
+			say(["🍖", "Milk", 'latte', {attachment: 'audio', url: "https://bit.ly/3e2CTPo"}]).then(()=>{backtrack('a3', 'd12')})
+		}
+		// Japanese for Milk
+		if (payload === 'JPd12'){
+			say(["🍖", "Milk", '牛乳', {attachment: 'audio', url: "https://bit.ly/2Z0oKhi"}]).then(()=>{backtrack('a3', 'd12')})
+		}
+		// Spanish for Milk
+		if (payload === 'ESd12'){
+			say(["🍖", "Milk", 'leche', {attachment: 'audio', url: "https://bit.ly/2ZGcf9N"}]).then(()=>{backtrack('a3', 'd12')})
 		}
 
 		//***********************************************************************************/
