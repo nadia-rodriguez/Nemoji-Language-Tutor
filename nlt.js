@@ -556,6 +556,121 @@ const state = (payload, say, sendButton) => {
 			say(["🐵", "Monkey", 'mono', {attachment: 'audio',url: "https://bit.ly/2VOJxCJ"}]).then(()=>{backtrack('a2', 'c5')});
 		}
 	
+		// ************************ Different Languages for Tiger (c6)*********************//
+		if (payload === 'c6') {
+			chooseLanguage('c6')
+		}
+		// Arabic for Tiger
+		if(payload === 'ARc6') {
+			say(["🐯", "Tiger", "نمر", {attachment: 'audio',url: "https://bit.ly/2Z1dzF9"}]).then(()=>{backtrack('a2', 'c6')});
+		}
+		// Chinese for Tiger
+		if(payload === 'CNc6') {
+			say(["🐯", "Tiger", "老虎", {attachment: 'audio',url: "https://bit.ly/2BAO3xv"}]).then(()=>{backtrack('a2', 'c6')});
+		}
+		// French for Tiger
+		if(payload === 'FRc6') {
+			say(["🐯", "Tiger", "tigre", {attachment: 'audio',url: "https://bit.ly/2OIkH38"}]).then(()=> {backtrack('a2', 'c6')});
+		}
+		// Italian for Tiger
+		if(payload === 'ITc6') {
+			say(["🐯", "Tiger", 'tigre', {attachment: 'audio',url: "https://bit.ly/3gysXyz"}]).then(()=>{backtrack('a2', 'c6')});
+		}
+		// Japanese for Tiger
+		if(payload === 'JPc6') {
+			say(["🐯", "Tiger", '虎', {attachment: 'audio',url: "https://bit.ly/2Z2maYk"}]).then(()=>{backtrack('a2', 'c6')});
+		}
+		// Spanish for Tiger
+		if(payload === 'ESc6') {
+			say(["🐯", "Tiger", 'tigre', {attachment: 'audio',url: "https://bit.ly/2DdDd12"}]).then(()=>{backtrack('a2', 'c6')});
+		}
+	
+		// ************************ Different Languages for Pig (c7)*********************//
+		if (payload === 'c7') {
+			chooseLanguage('c7')
+		}
+		// Arabic for Pig
+		if(payload === 'ARc7') {
+			say(["🐷", "Pig", "خنزير", {attachment: 'audio',url: "https://bit.ly/2VPDBJA"}]).then(()=>{backtrack('a2', 'c7')});
+		}
+		// Chinese for Pig
+		if(payload === 'CNc7') {
+			say(["🐷", "Pig", "猪", {attachment: 'audio',url: "https://bit.ly/3dYWVdw"}]).then(()=>{backtrack('a2', 'c7')});
+		}
+		// French for Pig
+		if(payload === 'FRc7') {
+			say(["🐷", "Pig", "porc", {attachment: 'audio',url: "https://bit.ly/2WJYztL"}]).then(()=> {backtrack('a2', 'c7')});
+		}
+		// Italian for Pig
+		if(payload === 'ITc7') {
+			say(["🐷", "Pig", 'maiale', {attachment: 'audio',url: "https://bit.ly/38z1XMH"}]).then(()=>{backtrack('a2', 'c7')});
+		}
+		// Japanese for Pig
+		if(payload === 'JPc7') {
+			say(["🐷", "Pig", '豚', {attachment: 'audio',url: "https://bit.ly/38vvwPf"}]).then(()=>{backtrack('a2', 'c7')});
+		}
+		// Spanish for Pig
+		if(payload === 'ESc7') {
+			say(["🐷", "Pig", 'puerco', {attachment: 'audio',url: "https://bit.ly/2BHz44T"}]).then(()=>{backtrack('a2', 'c7')});
+		}
+	
+		// ************************ Different Languages for Bunny (c8)*********************//
+		if (payload === 'c8') {
+			chooseLanguage('c8')
+		}
+		// Arabic for Bunny
+		if(payload === 'ARc8') {
+			say(["🐇", "Bunny", "أرنب", {attachment: 'audio',url: "https://bit.ly/3gwGWVA"}]).then(()=>{backtrack('a2', 'c8')});
+		}
+		// Chinese for Bunny
+		if(payload === 'CNc8') {
+			say(["🐇", "Bunny", "兔子", {attachment: 'audio',url: "https://bit.ly/2VIwEtH"}]).then(()=>{backtrack('a2', 'c8')});
+		}
+		// French for Bunny
+		if(payload === 'FRc8') {
+			say(["🐇", "Bunny", "lapin", {attachment: 'audio',url: "https://bit.ly/2CTFTkk"}]).then(()=> {backtrack('a2', 'c8')});
+		}
+		// Italian for Bunny
+		if(payload === 'ITc8') {
+			say(["🐇", "Bunny", 'coniglio', {attachment: 'audio',url: "https://bit.ly/2NXadNh"}]).then(()=>{backtrack('a2', 'c8')});
+		}
+		// Japanese for Bunny
+		if(payload === 'JPc8') {
+			say(["🐇", "Bunny", 'うさぎちゃん', {attachment: 'audio',url: "https://bit.ly/3dYJpqt"}]).then(()=>{backtrack('a2', 'c8')});
+		}
+		// Spanish for Bunny
+		if(payload === 'ESc8') {
+			say(["🐇", "Bunny", 'conejito', {attachment: 'audio',url: "https://bit.ly/3ixIm4e"}]).then(()=>{backtrack('a2', 'c8')});
+		}
+
+		// ************************ WORKING ON: Different Languages for Chicken (c9)*********************//
+		if (payload === 'c8') {
+			chooseLanguage('c8')
+		}
+		// Arabic for Bunny
+		if(payload === 'ARc8') {
+			say(["🐇", "Bunny", "أرنب", {attachment: 'audio',url: "https://bit.ly/3gwGWVA"}]).then(()=>{backtrack('a2', 'c8')});
+		}
+		// Chinese for Bunny
+		if(payload === 'CNc8') {
+			say(["🐇", "Bunny", "兔子", {attachment: 'audio',url: "https://bit.ly/2VIwEtH"}]).then(()=>{backtrack('a2', 'c8')});
+		}
+		// French for Bunny
+		if(payload === 'FRc8') {
+			say(["🐇", "Bunny", "lapin", {attachment: 'audio',url: "https://bit.ly/2CTFTkk"}]).then(()=> {backtrack('a2', 'c8')});
+		}
+		// Italian for Bunny
+		if(payload === 'ITc8') {
+			say(["🐇", "Bunny", 'coniglio', {attachment: 'audio',url: "https://bit.ly/2NXadNh"}]).then(()=>{backtrack('a2', 'c8')});
+		}
+		// Japanese for Bunny
+		if(payload === 'JPc8') {
+			say(["🐇", "Bunny", 'うさぎちゃん', {attachment: 'audio',url: "https://bit.ly/3dYJpqt"}]).then(()=>{backtrack('a2', 'c8')});
+		}
+		// Spanish for Bunny
+		if(payload === 'ESc8') {
+			say(["🐇", "Bunny", 'conejito', {attachment: 'audio',url: "https://bit.ly/3ixIm4e"}]).then(()=>{backtrack('a2', 'c8')});
+		}
 
 		//***********************************************************************************/
 		// ************************* Category 3: food (a3) ******************************//
