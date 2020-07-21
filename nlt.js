@@ -961,13 +961,15 @@ const state = (payload, say, sendButton) => {
 			sendButton('Please choose a language you want to take the quiz in', [{title: 'A. 🇨🇳', payload: 'CHqz'},
 			{title: 'B. 🇪🇸', payload: 'ESqz' }, {title: 'C. 🇮🇹', payload: 'ITqz'}])
 		}
+	
+		//****CHINESE SECTION****//
 
 		if(payload === 'CHqz') {
 		  sendButton('Please choose a question🤗',
 		  [{title: '1️', payload: 'qz1'}, {title: '2', payload: 'qz2'},
 		  {title: '3', payload: 'qz3'}, {title: '4', payload: 'qz4'},
 		  {title: '4', payload: 'qz5'}, {title: '5', payload: 'qz6'}]);
-	  }
+	 	 }
 
 		// ***************************************CHINESE QUIZ GENERATORS*************************************//
 		if(payload === 'qz1') {
@@ -1027,7 +1029,72 @@ const state = (payload, say, sendButton) => {
 				  {title: 'Try another ❓', payload: 'qz'}, {title: 'Exit', payload: 'no'}]);
 			  });
 		  }
+	
+		//****ITALIAN SECTION****//
+		if(payload === 'ITqz') {
+		  sendButton('Please choose a question🤗',
+		  [{title: '1️', payload: 'qz7'}, {title: '2', payload: 'qz8'},
+		  {title: '3', payload: 'qz9'}, {title: '4', payload: 'qz10'},
+		  {title: '4', payload: 'qz11'}, {title: '5', payload: 'qz12'}]);
+	 	 }
 
+		// ***************************************ITALIAN QUIZ GENERATORS*************************************//
+		if(payload === 'qz7') {
+			say(['i feel very 😀', 'I feel very 😀',  {attachment: 'audio',url: "https://bit.ly/3eH19qs"}]).then(()=>{
+				sendButton('Which choice could replace the emoji?',
+				[{title: 'A. happy', payload: 'correct'}, {title: 'B. Spaventato o spaventata', payload: 'incorrect'},
+				{title: 'C. Arrabiato o arrabiata', payload: 'incorrect'}])
+			  }).then(()=>italianChecker('correct'));
+		  }
+		if(payload === 'qz8') {
+			say(['我现在觉得很😡', 'I feel very 😡',  {attachment: 'audio',url: "https://bit.ly/3eH19qs"}]).then(()=>{
+				sendButton('Which choice could replace the emoji?',
+				[{title: 'A. 高兴', payload: 'qz1a'}, {title: 'B. 伤心', payload: 'qz1b'},
+				{title: 'C. 生气', payload: 'qz1c'}])
+			  }).then(()=>italianChecker(payload));
+		  }
+		if(payload === 'qz9') {
+			say(['我现在觉得很😡', 'I feel very 😡',  {attachment: 'audio',url: "https://bit.ly/3eH19qs"}]).then(()=>{
+				sendButton('Which choice could replace the emoji?',
+				[{title: 'A. 高兴', payload: 'qz1a'}, {title: 'B. 伤心', payload: 'qz1b'},
+				{title: 'C. 生气', payload: 'qz1c'}])
+			  });
+		  }
+		if(payload === 'qz10') {
+			say(['我现在觉得很😡', 'I feel very 😡',  {attachment: 'audio',url: "https://bit.ly/3eH19qs"}]).then(()=>{
+				sendButton('Which choice could replace the emoji?',
+				[{title: 'A. 高兴', payload: 'qz1a'}, {title: 'B. 伤心', payload: 'qz1b'},
+				{title: 'C. 生气', payload: 'qz1c'}])
+			  });
+		  }
+		if(payload === 'qz11') {
+			say(['我现在觉得很😡', 'I feel very 😡',  {attachment: 'audio',url: "https://bit.ly/3eH19qs"}]).then(()=>{
+				sendButton('Which choice could replace the emoji?',
+				[{title: 'A. 高兴', payload: 'qz1a'}, {title: 'B. 伤心', payload: 'qz1b'},
+				{title: 'C. 生气', payload: 'qz1c'}])
+			  });
+		  }
+		if(payload === 'qz12') {
+			say(['我现在觉得很😡', 'I feel very 😡',  {attachment: 'audio',url: "https://bit.ly/3eH19qs"}]).then(()=>{
+				sendButton('Which choice could replace the emoji?',
+				[{title: 'A. 高兴', payload: 'qz1a'}, {title: 'B. 伤心', payload: 'qz1b'},
+				{title: 'C. 生气', payload: 'qz1c'}])
+			  });
+		  }
+	
+		function italianChecker(answer){
+			if(answer === 'correct'){
+				say('You are Correct!').then( () => {
+				  sendButton('What\'s next?', [{title: 'Continue Learning...', payload: 'a'},
+				  {title: 'Try another ❓', payload: 'qz'}, {title: 'Exit', payload: 'no'}]);
+			  	});
+			}else{
+				say('Sorry, that is not correct!').then( () => {
+				  sendButton('What\'s next?', [{title: 'Continue Learning...', payload: 'a'},
+				  {title: 'Try another ❓', payload: 'qz'}, {title: 'Exit', payload: 'no'}]);
+			  	});
+			}
+		}
 
 		
 
