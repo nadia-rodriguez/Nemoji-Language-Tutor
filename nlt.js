@@ -1283,8 +1283,8 @@ const state = (payload, say, sendButton) => {
 			say(["✈️", "Plane", 'Avion', {attachment: 'audio', url: "https://bit.ly/31R5HI7"}]).then(()=>{backtrack('a4', 'e8')})
 		}
 		
-	// ************************ Different Languages for Bus (e9)*********************//
-	if (payload === 'e9'){
+		// ************************ Different Languages for Bus (e9)*********************//
+		if (payload === 'e9'){
 			chooseLanguage('e9');
 		}
 		// Arabic for Bus
@@ -1319,13 +1319,264 @@ const state = (payload, say, sendButton) => {
 		// all location payload starts with f
 		if (payload === 'a5') {
 			sendButton('What expression would you like to learn?',
-			[{title: 'A. 🐶', payload: 'c1'}, {title: 'B. 😺', payload: 'c2'},
-			{title: 'C. 🐴', payload: 'c3'}, {title: 'D. 🐟', payload: 'c4'},
-			{title: 'E. 🐵', payload: 'c5'}, {title: 'F. 🐯', payload: 'c6'}, 
-			{title: 'G. 🐷', payload: 'c7'}, {title: 'H. 🐇', payload: 'c8'}, 
-			{title: 'I. 🐔', payload: 'c9'}, {title: 'J. 🐍', payload: 'c10'}, 
-			{title: 'K. 🐬', payload: 'c11'}, {title: 'L. 🐝', payload: 'c12'}]
+			[{title: 'A. 🏖️', payload: 'f1'}, {title: 'B. 🏥', payload: 'f2'},
+			{title: 'C. 🚉', payload: 'f3'}, {title: 'D. 🏫', payload: 'f4'},
+			{title: 'E. 🏦', payload: 'f5'}, {title: 'F. 🌋', payload: 'f6'}, 
+			{title: 'G. 🏟️', payload: 'f7'}, {title: 'H. 🎠', payload: 'f8'}, 
+			{title: 'I. 🏜️ ', payload: 'f9'}]
 			);
+		}
+		// ************************ Different Languages for Beach (f1)*********************//
+		if (payload === 'f1'){
+			chooseLanguage('f1');
+		}
+		// Arabic for Beach
+		if (payload === 'ARf1'){
+			say(["🏖️", "Beach", 'شاطئ بحر', {attachment: 'audio', url: "https://bit.ly/38uPbir"}]).then(()=>{backtrack('a5', 'f1')})
+		}
+		// Chinese for Beach
+		if (payload === 'CNf1'){
+			say(["🏖️", "Beach", '沙滩', {attachment: 'audio', url: "https://bit.ly/2AsOFox"}]).then(()=>{backtrack('a5', 'f1')})
+		}
+		// French for Beach
+		if (payload === 'FRf1'){
+			say(["🏖️", "Beach", 'Plage', {attachment: 'audio', url: "https://bit.ly/2ZLCM5s"}]).then(()=>{backtrack('a5', 'f1')})
+		}
+		// Italian for Beach
+		if (payload === 'ITf1'){
+			say(["🏖️", "Beach", 'Spiaggia', {attachment: 'audio', url: "https://tinyurl.com/y3y4fcfu"}]).then(()=>{backtrack('a5', 'f1')})
+		}
+		// Japanese for Beach
+		if (payload === 'JPf1'){
+			say(["🏖️", "Beach", 'ビーチ', {attachment: 'audio', url: "https://tinyurl.com/y3lu6sss"}]).then(()=>{backtrack('a5', 'f1')})
+		}
+		// Spanish for Beach
+		if (payload === 'ESf1'){
+			say(["🏖️", "Beach", 'Playa', {attachment: 'audio', url: "https://bit.ly/2ZFaZUr"}]).then(()=>{backtrack('a5', 'f1')})
+		}
+		// ************************ Different Languages for Hospital (f2)*********************//
+		if (payload === 'f2'){
+			chooseLanguage('f2');
+		}
+		// Arabic for Hospital
+		if (payload === 'ARf2'){
+			say(["🏥", "Hospital", 'مستشفى', {attachment: 'audio', url: "https://bit.ly/2Z1HZah"}]).then(()=>{backtrack('a5', 'f2')})
+		}
+		// Chinese for Hospital
+		if (payload === 'CNf2'){
+			say(["🏥", "Hospital", '医院', {attachment: 'audio', url: "https://bit.ly/3dReGvm"}]).then(()=>{backtrack('a5', 'f2')})
+		}
+		// French for Hospital
+		if (payload === 'FRf2'){
+			say(["🏥", "Hospital", 'Hôpital', {attachment: 'audio', url: "https://bit.ly/3iDfszK"}]).then(()=>{backtrack('a5', 'f2')})
+		}
+		// Italian for Hospital
+		if (payload === 'ITf2'){
+			say(["🏥", "Hospital", 'Ospedale', {attachment: 'audio', url: "https://tinyurl.com/y44gu77c"}]).then(()=>{backtrack('a5', 'f2')})
+		}
+		// Japanese for Hospital
+		if (payload === 'JPf2'){
+			say(["🏥", "Hospital", '病院', {attachment: 'audio', url: "https://tinyurl.com/yypqlsnk"}]).then(()=>{backtrack('a5', '21')})
+		}
+		// Spanish for Hospital
+		if (payload === 'ESf2'){
+			say(["🏥", "Hospital", 'Hospital', {attachment: 'audio', url: "hhttps://bit.ly/2DcTof4"}]).then(()=>{backtrack('a5', 'f2')})
+		}
+		// ************************ Different Languages for Station (f3)*********************//
+		if (payload === 'f3'){
+			chooseLanguage('f3');
+		}
+		// Arabic for Station
+		if (payload === 'ARf3'){
+			say(["🚉", "Station", 'محطة', {attachment: 'audio', url: "https://bit.ly/2AzlEaG"}]).then(()=>{backtrack('a5', 'f3')})
+		}
+		// Chinese for Station
+		if (payload === 'CNf3'){
+			say(["🚉", "Station", '站台', {attachment: 'audio', url: "https://bit.ly/2ZyvQIV"}]).then(()=>{backtrack('a5', 'f3')})
+		}
+		// French for Station
+		if (payload === 'FRf3'){
+			say(["🚉", "Station", 'Gare', {attachment: 'audio', url: "https://bit.ly/2Z2URwQ"}]).then(()=>{backtrack('a5', 'f3')})
+		}
+		// Italian for Station
+		if (payload === 'ITf3'){
+			say(["🚉", "Station", 'Stazione', {attachment: 'audio', url: "https://tinyurl.com/y4sd5zft"}]).then(()=>{backtrack('a5', 'f3')})
+		}
+		// Japanese for Station
+		if (payload === 'JPf3'){
+			say(["🚉", "Station", '駅', {attachment: 'audio', url: "https://tinyurl.com/y4x9wjoo"}]).then(()=>{backtrack('a5', 'f3')})
+		}
+		// Spanish for Station
+		if (payload === 'ESf3'){
+			say(["🚉", "Station", 'Estacion', {attachment: 'audio', url: "https://bit.ly/2VOgEXb"}]).then(()=>{backtrack('a5', 'f3')})
+		}
+		// ************************ Different Languages for school (f4)*********************//
+		if (payload === 'f4'){
+			chooseLanguage('f4');
+		}
+		// Arabic for school
+		if (payload === 'ARf4'){
+			say(["🏫", "School", 'مدرسة', {attachment: 'audio', url: "https://bit.ly/38wkHMU"}]).then(()=>{backtrack('a5', 'f4')})
+		}
+		// Chinese for school
+		if (payload === 'CNf4'){
+			say(["🏫", "School", '学校', {attachment: 'audio', url: "https://bit.ly/2YWQvrb"}]).then(()=>{backtrack('a5', 'f4')})
+		}
+		// French for school
+		if (payload === 'FRf4'){
+			say(["🏫", "School", 'École', {attachment: 'audio', url: "https://bit.ly/2O2BP3u"}]).then(()=>{backtrack('a5', 'f4')})
+		}
+		// Italian for school
+		if (payload === 'ITf4'){
+			say(["🏫", "School", 'Scuola', {attachment: 'audio', url: "https://tinyurl.com/y6jpsu3y"}]).then(()=>{backtrack('a5', 'f4')})
+		}
+		// Japanese for school
+		if (payload === 'JPf4'){
+			say(["🏫", "School", '学校', {attachment: 'audio', url: "https://tinyurl.com/y5kzvl98"}]).then(()=>{backtrack('a5', 'f4')})
+		}
+		// Spanish for school
+		if (payload === 'ESf4'){
+			say(["🏫", "School", 'Escuela', {attachment: 'audio', url: "https://bit.ly/2BJFEI6"}]).then(()=>{backtrack('a5', 'f4')})
+		}
+		// ************************ Different Languages for bank (f5)*********************//
+		if (payload === 'f5'){
+			chooseLanguage('f5');
+		}
+		// Arabic for bank
+		if (payload === 'ARf5'){
+			say(["🏦", "Bank", 'مصرف', {attachment: 'audio', url: "https://bit.ly/38IMKch"}]).then(()=>{backtrack('a5', 'f5')})
+		}
+		// Chinese for bank
+		if (payload === 'CNf5'){
+			say(["🏦", "Bank", '银行', {attachment: 'audio', url: "https://bit.ly/3dReBry"}]).then(()=>{backtrack('a5', 'f5')})
+		}
+		// French for bank
+		if (payload === 'FRf5'){
+			say(["🏦", "Bank", 'Banque', {attachment: 'audio', url: "https://bit.ly/2NY0rdJ"}]).then(()=>{backtrack('a5', 'f5')})
+		}
+		// Italian for bank
+		if (payload === 'ITf5'){
+			say(["🏦", "Bank", 'Banca', {attachment: 'audio', url: "https://tinyurl.com/y3k6vdlz"}]).then(()=>{backtrack('a5', 'f5')})
+		}
+		// Japanese for bank
+		if (payload === 'JPf5'){
+			say(["🏦", "Bank", 'バンク', {attachment: 'audio', url: "https://tinyurl.com/y299l9dh"}]).then(()=>{backtrack('a5', 'f5')})
+		}
+		// Spanish for bank
+		if (payload === 'ESf5'){
+			say(["🏦", "Bank", 'Banco', {attachment: 'audio', url: "https://bit.ly/2BFYyzJ"}]).then(()=>{backtrack('a5', 'f5')})
+		}
+		// ************************ Different Languages for volcano (f6)*********************//
+		if (payload === 'f6'){
+			chooseLanguage('f6');
+		}
+		// Arabic for volcano
+		if (payload === 'ARf6'){
+			say(["🌋", "Volcano", 'بركان', {attachment: 'audio', url: "https://bit.ly/3faafgA"}]).then(()=>{backtrack('a5', 'f6')})
+		}
+		// Chinese for volcano
+		if (payload === 'CNf6'){
+			say(["🌋", "Volcano", '火山', {attachment: 'audio', url: "https://bit.ly/2NRHRDM"}]).then(()=>{backtrack('a5', 'f6')})
+		}
+		// French for volcano
+		if (payload === 'FRf6'){
+			say(["🌋", "Volcano", 'Volcan', {attachment: 'audio', url: "https://bit.ly/2C6l8kV"}]).then(()=>{backtrack('a5', 'f6')})
+		}
+		// Italian for volcano
+		if (payload === 'ITf6'){
+			say(["🌋", "Volcano", 'Vulcano', {attachment: 'audio', url: "https://tinyurl.com/y3xlgbfe"}]).then(()=>{backtrack('a5', 'f6')})
+		}
+		// Japanese for volcano
+		if (payload === 'JPf6'){
+			say(["🌋", "Volcano", '火山', {attachment: 'audio', url: "https://tinyurl.com/y6xhxn5t"}]).then(()=>{backtrack('a5', 'f6')})
+		}
+		// Spanish for volcano
+		if (payload === 'ESf6'){
+			say(["🌋", "Volcano", 'Volcan', {attachment: 'audio', url: "https://bit.ly/3iAlktB"}]).then(()=>{backtrack('a5', 'f6')})
+		}
+		// ************************ Different Languages for stadium (f7)*********************//
+		if (payload === 'f7'){
+			chooseLanguage('f7');
+		}
+		// Arabic for stadium
+		if (payload === 'ARf7'){
+			say(["🏟️", "Stadium", 'ملعب', {attachment: 'audio', url: "https://bit.ly/2Z6U3Y1"}]).then(()=>{backtrack('a5', 'f7')})
+		}
+		// Chinese for stadium
+		if (payload === 'CNf7'){
+			say(["🏟️", "Stadium", '体育馆', {attachment: 'audio', url: "https://bit.ly/3f2ZQmQ"}]).then(()=>{backtrack('a5', 'f7')})
+		}
+		// French for stadium
+		if (payload === 'FRf7'){
+			say(["🏟️", "Stadium", 'Stade', {attachment: 'audio', url: "https://bit.ly/38zPpod"}]).then(()=>{backtrack('a5', 'f7')})
+		}
+		// Italian for stadium
+		if (payload === 'ITf7'){
+			say(["🏟️", "Stadium", 'Stadio', {attachment: 'audio', url: "https://tinyurl.com/y3cbxyxl"}]).then(()=>{backtrack('a5', 'f7')})
+		}
+		// Japanese for stadium
+		if (payload === 'JPf7'){
+			say(["🏟️", "Stadium", 'スタジアム', {attachment: 'audio', url: "https://tinyurl.com/y58n8nzr"}]).then(()=>{backtrack('a5', 'f7')})
+		}
+		// Spanish for stadium
+		if (payload === 'ESf7'){
+			say(["🏟️", "Stadium", 'Estadio', {attachment: 'audio', url: "https://bit.ly/3ivXdfr"}]).then(()=>{backtrack('a5', 'f7')})
+		}
+		// ************************ Different Languages for amusement park (f8)*********************//
+		if (payload === 'f8'){
+			chooseLanguage('f8');
+		}
+		// Arabic for amusement park
+		if (payload === 'ARf8'){
+			say(["🎠", "Amusement park", 'متنزه', {attachment: 'audio', url: "https://bit.ly/3f6JDwO"}]).then(()=>{backtrack('a5', 'f8')})
+		}
+		// Chinese for amusement park
+		if (payload === 'CNf8'){
+			say(["🎠", "Amusement park", '游乐场', {attachment: 'audio', url: "https://bit.ly/3dZngrO"}]).then(()=>{backtrack('a5', 'f8')})
+		}
+		// French for amusement park
+		if (payload === 'FRf8'){
+			say(["🎠", "Amusement park", 'Parc d\'attractions', {attachment: 'audio', url: "https://bit.ly/2BAidBh"}]).then(()=>{backtrack('a5', 'f8')})
+		}
+		// Italian for amusement park
+		if (payload === 'ITf8'){
+			say(["🎠", "Amusement park", 'Parco divertimenti', {attachment: 'audio', url: "https://tinyurl.com/y23ff4fq"}]).then(()=>{backtrack('a5', 'f8')})
+		}
+		// Japanese for amusement park
+		if (payload === 'JPf8'){
+			say(["🎠", "Amusement park", '遊園地', {attachment: 'audio', url: "https://tinyurl.com/y2n4aqpm"}]).then(()=>{backtrack('a5', 'f8')})
+		}
+		// Spanish for amusement park
+		if (payload === 'ESf8'){
+			say(["🎠", "Amusement park", 'Parque de attraciones', {attachment: 'audio', url: "https://bit.ly/2ZJDG2s"}]).then(()=>{backtrack('a5', 'f8')})
+		}
+		// ************************ Different Languages for Desert (f9)*********************//
+		if (payload === 'f9'){
+			chooseLanguage('f9');
+		}
+		// Arabic for Desert
+		if (payload === 'ARf9'){
+			say(["🏜️", "Desert", 'صحراء', {attachment: 'audio', url: "https://bit.ly/3f65G6T"}]).then(()=>{backtrack('a5', 'f9')})
+		}
+		// Chinese for Desert
+		if (payload === 'CNf9'){
+			say(["🏜️", "Desert", '沙漠', {attachment: 'audio', url: "https://bit.ly/2ZH619L"}]).then(()=>{backtrack('a5', 'f9')})
+		}
+		// French for Desert
+		if (payload === 'FRf9'){
+			say(["🏜️", "Desert", 'Désert/déserte', {attachment: 'audio', url: "https://bit.ly/3dYKoqA"}]).then(()=>{backtrack('a5', 'f9')})
+		}
+		// Italian for Desert
+		if (payload === 'ITf9'){
+			say(["🏜️", "Desert", 'Deserto/a', {attachment: 'audio', url: "https://tinyurl.com/yyv5cs9q"}]).then(()=>{backtrack('a5', 'f9')})
+		}
+		// Japanese for Desert
+		if (payload === 'JPf9'){
+			say(["🏜️", "Desert", '砂漠', {attachment: 'audio', url: "https://tinyurl.com/y4e3wpu4"}]).then(()=>{backtrack('a5', 'f9')})
+		}
+		// Spanish for Desert
+		if (payload === 'ESf9'){
+			say(["🏜️", "Desert", 'Desierto', {attachment: 'audio', url: "https://bit.ly/2ZAUSXY"}]).then(()=>{backtrack('a5', 'f9')})
 		}
 
 
