@@ -1049,7 +1049,269 @@ const state = (payload, say, sendButton) => {
 			{title: 'I. 🚌', payload: 'e9'} ]
 			);
 		}
-
+		// ************************ Different Languages for Car (e1)*********************//
+		if (payload === 'e1'){
+			chooseLanguage('e1');
+		}
+		// Arabic for Car
+		if (payload === 'ARe1'){
+			say(["🚗", "Car", 'سيارة', {attachment: 'audio', url: "https://bit.ly/3e4GUTt"}]).then(()=>{backtrack('a4', 'e1')})
+		}
+		// Chinese for Car
+		if (payload === 'CNe1'){
+			say(["🚗", "Car", '小车', {attachment: 'audio', url: "https://bit.ly/2VNetmO"}]).then(()=>{backtrack('a4', 'e1')})
+		}
+		// French for Car
+		if (payload === 'FRe1'){
+			say(["🚗", "Car", 'Voiture', {attachment: 'audio', url: "https://bit.ly/31S1lQT"}]).then(()=>{backtrack('a4', 'e1')})
+		}
+		// Italian for Car
+		if (payload === 'ITe1'){
+			say(["🚗", "Car", 'Macchina', {attachment: 'audio', url: "https://bit.ly/3dZOJJV"}]).then(()=>{backtrack('a4', 'e1')})
+		}
+		// Japanese for Car
+		if (payload === 'JPe1'){
+			say(["🚗", "Car", '車', {attachment: 'audio', url: "https://bit.ly/3e03zA9"}]).then(()=>{backtrack('a4', 'e1')})
+		}
+		// Spanish for Car
+		if (payload === 'ESe1'){
+			say(["🚗", "Car", 'Coche', {attachment: 'audio', url: "https://bit.ly/31O5fu8"}]).then(()=>{backtrack('a4', 'e1')})
+		}
+		
+		// ************************ Different Languages for Taxi (e2)*********************//
+	if (payload === 'e2'){
+			chooseLanguage('e2');
+		}
+		// Arabic for Taxi
+		if (payload === 'ARe2'){
+			say(["🚕", "Taxi", 'سيارة اجره', {attachment: 'audio', url: "https://bit.ly/3f63goP"}]).then(()=>{backtrack('a4', 'e2')})
+		}
+		// Chinese for Taxi
+		if (payload === 'CNe2'){
+			say(["🚕", "Taxi", '出租车', {attachment: 'audio', url: "https://bit.ly/2Dbej2d "}]).then(()=>{backtrack('a4', 'e2')})
+		}
+		// French for Taxi
+		if (payload === 'FRe2'){
+			say(["🚕", "Taxi", 'Taxi', {attachment: 'audio', url: "https://bit.ly/38FgA1e"}]).then(()=>{backtrack('a4', 'e2')})
+		}
+		// Italian for Taxi
+		if (payload === 'ITe2'){
+			say(["🚕", "Taxi", 'Taxi', {attachment: 'audio', url: "https://bit.ly/2O1vPI0"}]).then(()=>{backtrack('a4', 'e2')})
+		}
+		// Japanese for Taxi
+		if (payload === 'JPe2'){
+			say(["🚕", "Taxi", 'タクシー', {attachment: 'audio', url: "https://bit.ly/38yaoYT"}]).then(()=>{backtrack('a4', 'e2')})
+		}
+		// Spanish for Taxi
+		if (payload === 'ESe2'){
+			say(["🚕", "Taxi", 'Taxi', {attachment: 'audio', url: "https://bit.ly/2VQ9fqm"}]).then(()=>{backtrack('a4', 'e2')})
+		}
+		
+	
+	
+	// ************************ Different Languages for Train (e3)*********************//
+	if (payload === 'e3'){
+			chooseLanguage('e3');
+		}
+		// Arabic for Train
+		if (payload === 'ARe3'){
+			say(["🚝", "Train", 'قطار', {attachment: 'audio', url: "https://bit.ly/2Z5LJaR"}]).then(()=>{backtrack('a4', 'e3')})
+		}
+		// Chinese for Train
+		if (payload === 'CNe3'){
+			say(["🚝", "Train", '火车', {attachment: 'audio', url: "https://bit.ly/3gv6Ol3"}]).then(()=>{backtrack('a4', 'e3')})
+		}
+		// French for Train
+		if (payload === 'FRe3'){
+			say(["🚝", "Train", 'Train', {attachment: 'audio', url: "https://bit.ly/38yAgDZ"}]).then(()=>{backtrack('a4', 'e3')})
+		}
+		// Italian for Train
+		if (payload === 'ITe3'){
+			say(["🚝", "Train", 'Treno', {attachment: 'audio', url: "https://bit.ly/38GaI81"}]).then(()=>{backtrack('a4', 'e3')})
+		}
+		// Japanese for Train
+		if (payload === 'JPe3'){
+			say(["🚝", "Train", '列車', {attachment: 'audio', url: "https://bit.ly/3f5eCtl"}]).then(()=>{backtrack('a4', 'e3')})
+		}
+		// Spanish for Train
+		if (payload === 'ESe3'){
+			say(["🚝", "Train", 'Tren', {attachment: 'audio', url: "https://bit.ly/3iyoYnO"}]).then(()=>{backtrack('a4', 'e3')})
+		}
+		
+	// ************************ Different Languages for Bike (e4)*********************//
+	if (payload === 'e4'){
+			chooseLanguage('e4');
+		}
+		// Arabic for Bike
+		if (payload === 'ARe4'){
+			say(["🚲", "Bike", 'دراجة', {attachment: 'audio', url: "https://bit.ly/3e36BUn"}]).then(()=>{backtrack('a4', 'e4')})
+		}
+		// Chinese for Bike
+		if (payload === 'CNe4'){
+			say(["🚲", "Bike", '自行车', {attachment: 'audio', url: "https://bit.ly/38nzY2D"}]).then(()=>{backtrack('a4', 'e4')})
+		}
+		// French for Bike
+		if (payload === 'FRe4'){
+			say(["🚲", "Bike", 'Bicyclette', {attachment: 'audio', url: "https://bit.ly/2DhCjAH"}]).then(()=>{backtrack('a4', 'e4')})
+		}
+		// Italian for Bike
+		if (payload === 'ITe4'){
+			say(["🚲", "Bike", 'Bicicletta', {attachment: 'audio', url: "https://bit.ly/2Z2M5Pl"}]).then(()=>{backtrack('a4', 'e4')})
+		}
+		// Japanese for Bike
+		if (payload === 'JPe4'){
+			say(["🚲", "Bike", '自転車', {attachment: 'audio', url: "https://bit.ly/3e03zA9"}]).then(()=>{backtrack('a4', 'e4')})
+		}
+		// Spanish for Bike
+		if (payload === 'ESe4'){
+			say(["🚲", "Bike", 'Bicicleta', {attachment: 'audio', url: "https://bit.ly/2BHy5ld"}]).then(()=>{backtrack('a4', 'e4')})
+		}
+		
+	// ************************ Different Languages for Motorcycle (e5)*********************//
+	if (payload === 'e5'){
+			chooseLanguage('e5');
+		}
+		// Arabic for Motorcycle
+		if (payload === 'ARe5'){
+			say(["🏍️", "Motorcycle", 'دراجة نارية', {attachment: 'audio', url: "https://bit.ly/2Z5I5xu"}]).then(()=>{backtrack('a4', 'e5')})
+		}
+		// Chinese for Motorcycle
+		if (payload === 'CNe5'){
+			say(["🏍️", "Motorcycle", '摩托车', {attachment: 'audio', url: "https://bit.ly/3eXiOeJ"}]).then(()=>{backtrack('a4', 'e5')})
+		}
+		// French for Motorcycle
+		if (payload === 'FRe5'){
+			say(["🏍️", "Motorcycle", 'Moto', {attachment: 'audio', url: "https://bit.ly/31XEMKC"}]).then(()=>{backtrack('a4', 'e5')})
+		}
+		// Italian for Motorcycle
+		if (payload === 'ITe5'){
+			say(["🏍️", "Motorcycle", 'Motocicletta', {attachment: 'audio', url: "https://bit.ly/2Z2rPgS"}]).then(()=>{backtrack('a4', 'e5')})
+		}
+		// Japanese for Motorcycle
+		if (payload === 'JPe5'){
+			say(["🏍️", "Motorcycle", 'オートバイ', {attachment: 'audio', url: "https://bit.ly/2NYlxZd"}]).then(()=>{backtrack('a4', 'e5')})
+		}
+		// Spanish for Motorcycle
+		if (payload === 'ESe5'){
+			say(["🏍️", "Motorcycle", 'Motocicleta', {attachment: 'audio', url: "https://bit.ly/3gvdjEa"}]).then(()=>{backtrack('a4', 'e5')})
+		}
+		
+	// ************************ Different Languages for Ship (e6)*********************//
+	if (payload === 'e6'){
+			chooseLanguage('e1');
+		}
+		// Arabic for Ship
+		if (payload === 'ARe6'){
+			say(["🚢", "Ship", 'سفينة', {attachment: 'audio', url: "https://bit.ly/2Z4Wla3"}]).then(()=>{backtrack('a4', 'e6')})
+		}
+		// Chinese for Ship
+		if (payload === 'CNe6'){
+			say(["🚢", "Ship", '轮船', {attachment: 'audio', url: "https://bit.ly/2VKN7h1"}]).then(()=>{backtrack('a4', 'e6')})
+		}
+		// French for Ship
+		if (payload === 'FRe6'){
+			say(["🚢", "Ship", 'Navire', {attachment: 'audio', url: "https://bit.ly/31PyA7F"}]).then(()=>{backtrack('a4', 'e6')})
+		}
+		// Italian for Ship
+		if (payload === 'ITe6'){
+			say(["🚢", "Ship", 'Nave', {attachment: 'audio', url: "https://bit.ly/2D5b3oK"}]).then(()=>{backtrack('a4', 'e6')})
+		}
+		// Japanese for Ship
+		if (payload === 'JPe6'){
+			say(["🚢", "Ship", '船', {attachment: 'audio', url: "https://bit.ly/2C8UTdB"}]).then(()=>{backtrack('a4', 'e6')})
+		}
+		// Spanish for Ship
+		if (payload === 'ESe6'){
+			say(["🚢", "Ship", 'Barco', {attachment: 'audio', url: "https://bit.ly/31Ue8lQ"}]).then(()=>{backtrack('a4', 'e6')})
+		}
+		
+	// ************************ Different Languages for Helicopter (e7)*********************//
+	if (payload === 'e7'){
+			chooseLanguage('e7');
+		}
+		// Arabic for Helicopter
+		if (payload === 'ARe7'){
+			say(["🚁", "Helicopter", 'هليكوبتر', {attachment: 'audio', url: "https://bit.ly/2Z3l12q"}]).then(()=>{backtrack('a4', 'e7')})
+		}
+		// Chinese for Helicopter
+		if (payload === 'CNe7'){
+			say(["🚁", "Helicopter", '直升机', {attachment: 'audio', url: "https://bit.ly/3dY1hBB"}]).then(()=>{backtrack('a4', 'e7')})
+		}
+		// French for Helicopter
+		if (payload === 'FRe7'){
+			say(["🚁", "Helicopter", 'Hélicoptère', {attachment: 'audio', url: "https://bit.ly/3gpXSxc"}]).then(()=>{backtrack('a4', 'e7')})
+		}
+		// Italian for Helicopter
+		if (payload === 'ITe7'){
+			say(["🚁", "Helicopter", 'Elicottero', {attachment: 'audio', url: "https://bit.ly/38we2SW"}]).then(()=>{backtrack('a4', 'e7')})
+		}
+		// Japanese for Helicopter
+		if (payload === 'JPe7'){
+			say(["🚁", "Helicopter", 'ヘリコプター', {attachment: 'audio', url: "https://bit.ly/2C8hOWs"}]).then(()=>{backtrack('a4', 'e7')})
+		}
+		// Spanish for Helicopter
+		if (payload === 'ESe7'){
+			say(["🚁", "Helicopter", 'Helicoptero', {attachment: 'audio', url: "https://bit.ly/2VMz3DS"}]).then(()=>{backtrack('a4', 'e7')})
+		}
+		
+	// ************************ Different Languages for Plane (e8)*********************//
+	if (payload === 'e8'){
+			chooseLanguage('e8');
+		}
+		// Arabic for Plane
+		if (payload === 'ARe8'){
+			say(["✈️", "Plane", 'مطار', {attachment: 'audio', url: "https://bit.ly/3e2puHa"}]).then(()=>{backtrack('a4', 'e8')})
+		}
+		// Chinese for Plane
+		if (payload === 'CNe8'){
+			say(["✈️", "Plane", '飞机', {attachment: 'audio', url: "https://bit.ly/2NVEJqx"}]).then(()=>{backtrack('a4', 'e8')})
+		}
+		// French for Plane
+		if (payload === 'FRe8'){
+			say(["✈️", "Plane", 'Avion', {attachment: 'audio', url: "https://bit.ly/3gDGANj"}]).then(()=>{backtrack('a4', 'e8')})
+		}
+		// Italian for Plane
+		if (payload === 'ITe8'){
+			say(["✈️", "Plane", 'Aereo', {attachment: 'audio', url: "https://bit.ly/2BwES1m"}]).then(()=>{backtrack('a4', 'e8')})
+		}
+		// Japanese for Plane
+		if (payload === 'JPe8'){
+			say(["✈️", "Plane", '飛行機', {attachment: 'audio', url: "https://bit.ly/2O0HA1A"}]).then(()=>{backtrack('a4', 'e8')})
+		}
+		// Spanish for Plane
+		if (payload === 'ESe8'){
+			say(["✈️", "Plane", 'Avion', {attachment: 'audio', url: "https://bit.ly/31R5HI7"}]).then(()=>{backtrack('a4', 'e8')})
+		}
+		
+	// ************************ Different Languages for Bus (e9)*********************//
+	if (payload === 'e9'){
+			chooseLanguage('e9');
+		}
+		// Arabic for Bus
+		if (payload === 'ARe9'){
+			say(["🚌", "Bus", 'حافلة', {attachment: 'audio', url: "https://bit.ly/2O6COiV"}]).then(()=>{backtrack('a4', 'e9')})
+		}
+		// Chinese for Bus
+		if (payload === 'CNe9'){
+			say(["🚌", "Bus", '公交车', {attachment: 'audio', url: "https://bit.ly/3gqcwV7"}]).then(()=>{backtrack('a4', 'e9')})
+		}
+		// French for Bus
+		if (payload === 'FRe9'){
+			say(["🚌", "Bus", 'Autobus', {attachment: 'audio', url: "https://bit.ly/2NZftQa"}]).then(()=>{backtrack('a4', 'e9')})
+		}
+		// Italian for Bus
+		if (payload === 'ITe9'){
+			say(["🚌", "Bus", 'Autobus', {attachment: 'audio', url: "https://bit.ly/3f3cFxz"}]).then(()=>{backtrack('a4', 'e9')})
+		}
+		// Japanese for Bus
+		if (payload === 'JPe9'){
+			say(["🚌", "Bus", 'バス', {attachment: 'audio', url: "https://bit.ly/3f83sUD"}]).then(()=>{backtrack('a4', 'e9')})
+		}
+		// Spanish for Car
+		if (payload === 'ESe9'){
+			say(["🚌", "Bus", 'Autobús', {attachment: 'audio', url: "https://bit.ly/3gv0F8l"}]).then(()=>{backtrack('a4', 'e9')})
+		}
+		
 
 		//***********************************************************************************/
 		// ************************* Category 4: Location (a5) ******************************//
