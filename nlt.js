@@ -1599,14 +1599,14 @@ const state = (payload, say, sendButton) => {
 
 		// ***************************************CHINESE QUIZ GENERATORS*************************************//
 		if(payload === 'qz1') {
-			say(['我现在觉得很😡', 'I feel very 😡',  {attachment: 'audio',url: "https://bit.ly/3eH19qs"}]).then(()=>{
+			say(['我现在觉得很😡', 'I feel very 😡 now',  {attachment: 'audio',url: "https://bit.ly/2ZV8Kh4"}]).then(()=>{
 				sendButton('Which choice could replace the emoji?',
 				[{title: 'A. 高兴', payload: 'incorrect'}, {title: 'B. 伤心', payload: 'incorrect'},
 				{title: 'C. 生气', payload: 'correct'}])
 			  });
 		  }
 		  if(payload === 'qz2') {
-			  say(['我现在觉得很😱', 'I feel very 😱',  {attachment: 'audio',url: "https://bit.ly/3eH19qs"}]).then(()=>{
+			  say(['我现在觉得很😱', 'I feel very 😱 now',  {attachment: 'audio',url: "https://bit.ly/2ZV8Kh4"}]).then(()=>{
 				  sendButton('Which choice could replace the emoji?',
 				  [{title: 'A. 失望', payload: 'incorrect'}, 
 				  {title: 'B. 尴尬', payload: 'incorrect'}, {title: 'C. 害怕', payload: 'correct'}])
@@ -1694,22 +1694,21 @@ const state = (payload, say, sendButton) => {
 				{title: 'C. Biscotto', payload: 'incorrect'}])
 			  });
 		  }
-	
-		function Checker(answer){
-			if(answer === 'correct'){
+		
+		// quiz checker
+		if(payload === 'correct'){
 				say('You are Correct!').then( () => {
 				  sendButton('What\'s next?', [{title: 'Continue Learning...', payload: 'a'},
 				  {title: 'Try another ❓', payload: 'qz'}, {title: 'Exit', payload: 'no'}]);
 			  	});
-			}else{
-				say('Sorry, that is not correct!').then( () => {
-				  sendButton('What\'s next?', [{title: 'Continue Learning...', payload: 'a'},
-				  {title: 'Try another ❓', payload: 'qz'}, {title: 'Exit', payload: 'no'}]);
-			  	});
-			}
 		}
-
-		
+		if(payload === 'incorrect') {
+			say('Sorry, that is not correct!').then( () => {
+				 sendButton('What\'s next?', [{title: 'Continue Learning...', payload: 'a'},
+				 {title: 'Try another ❓', payload: 'qz'}, {title: 'Exit', payload: 'no'}]);
+			 });
+		}
+			
 
 } // final bracket for state
 
