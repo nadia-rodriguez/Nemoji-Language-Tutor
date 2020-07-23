@@ -1336,7 +1336,7 @@ const state = (payload, say, sendButton) => {
 		}
 		// Chinese for Beach
 		if (payload === 'CNf1'){
-			say(["🏖️", "Beach", '沙滩', {attachment: 'audio', url: "https://bit.ly/2AsOFox"}]).then(()=>{backtrack('a5', 'f1')})
+			say(["🏖️", "Beach", '沙滩', {attachment: 'audio', url: "https://bit.ly/30AviD6"}]).then(()=>{backtrack('a5', 'f1')})
 		}
 		// French for Beach
 		if (payload === 'FRf1'){
@@ -1380,7 +1380,7 @@ const state = (payload, say, sendButton) => {
 		}
 		// Spanish for Hospital
 		if (payload === 'ESf2'){
-			say(["🏥", "Hospital", 'Hospital', {attachment: 'audio', url: "hhttps://bit.ly/2DcTof4"}]).then(()=>{backtrack('a5', 'f2')})
+			say(["🏥", "Hospital", 'Hospital', {attachment: 'audio', url: "https://bit.ly/2DcTof4"}]).then(()=>{backtrack('a5', 'f2')})
 		}
 		// ************************ Different Languages for Station (f3)*********************//
 		if (payload === 'f3'){
