@@ -686,9 +686,7 @@ const state = (payload, say, sendButton) => {
 			{title: 'K. 🍖', payload: 'd11'}, {title: 'L. 🥛', payload: 'd12'}]
 			);
 		}
-	
 		// ************************ Different Languages for Beer (d1)*********************//
-	
 		if (payload === 'd1'){
 			chooseLanguage('d1');
 		}
@@ -698,11 +696,11 @@ const state = (payload, say, sendButton) => {
 		}
 		// Chinese for Beer
 		if (payload === 'CNd1'){
-			say(["🍺", "Beer", '啤酒', {attachment: 'audio', url: "https://bit.ly/2WM39rs"}]).then(()=>{backtrack('a3', 'd1')})
+			say(["🍺", "Beer", '啤酒', {attachment: 'audio', url: "https://bit.ly/2NQPxq3"}]).then(()=>{backtrack('a3', 'd1')})
 		}
 		// French for Beer
 		if (payload === 'FRd1'){
-			say(["🍺", "Beer", 'bière', {attachment: 'audio', url: "https://www.google.com/"}]).then(()=>{backtrack('a3', 'd1')}) //
+			say(["🍺", "Beer", 'bière', {attachment: 'audio', url: "https://bit.ly/2WM39rs"}]).then(()=>{backtrack('a3', 'd1')}) //
 		}
 		// Italian for Beer
 		if (payload === 'ITd1'){
@@ -730,19 +728,19 @@ const state = (payload, say, sendButton) => {
 			say(["🍎", "Apple", '苹果', {attachment: 'audio', url: "https://bit.ly/3eQPPZQ"}]).then(()=>{backtrack('a3', 'd2')})
 		}
 		// French for Apple
-		if (payload === 'FRd1'){
+		if (payload === 'FRd2'){
 			say(["🍎", "Apple", 'pomme', {attachment: 'audio', url: "https://bit.ly/2ZRcKiE"}]).then(()=>{backtrack('a3', 'd2')}) //
 		}
 		// Italian for Apple
-		if (payload === 'ITd1'){
+		if (payload === 'ITd2'){
 			say(["🍎", "Apple", 'mela', {attachment: 'audio', url: "https://bit.ly/2O0lbl3"}]).then(()=>{backtrack('a3', 'd2')})
 		}
 		// Japanese for Apple
-		if (payload === 'JPd1'){
+		if (payload === 'JPd2'){
 			say(["🍎", "Apple", '林檎', {attachment: 'audio', url: "https://bit.ly/3e9o8uk"}]).then(()=>{backtrack('a3', 'd2')})
 		}
 		// Spanish for Beer
-		if (payload === 'ESd1'){
+		if (payload === 'ESd2'){
 			say(["🍎", "Apple", 'manzana', {attachment: 'audio', url: "https://bit.ly/3iIudkS"}]).then(()=>{backtrack('a3', 'd2')})
 		}
 	
