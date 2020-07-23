@@ -1668,45 +1668,45 @@ const state = (payload, say, sendButton) => {
 
 		// ***************************************ITALIAN QUIZ GENERATORS*************************************//
 		if(payload === 'qz7') {
-			say(['i feel very 😀', 'I feel very 😀',  {attachment: 'audio',url: "https://bit.ly/3eH19qs"}]).then(()=>{
+			say(['Mi sento molto 😀', 'I feel very 😀',  {attachment: 'audio',url: "https://bit.ly/2WMGCe8"}]).then(()=>{
 				sendButton('Which choice could replace the emoji?',
-				[{title: 'A. happy', payload: 'correct'}, {title: 'B. Spaventato o spaventata', payload: 'incorrect'},
+				[{title: 'A. Felice', payload: 'correct'}, {title: 'B. Spaventato o spaventata', payload: 'incorrect'},
 				{title: 'C. Arrabiato o arrabiata', payload: 'incorrect'}])
 			  }).then(()=>italianChecker('correct'));
 		  }
 		if(payload === 'qz8') {
-			say(['我现在觉得很😡', 'I feel very 😡',  {attachment: 'audio',url: "https://bit.ly/3eH19qs"}]).then(()=>{
+			say(['Voglio andare in 🚲', 'I want to ride a 🚲',  {attachment: 'audio',url: "https://bit.ly/39m9M90"}]).then(()=>{
 				sendButton('Which choice could replace the emoji?',
-				[{title: 'A. 高兴', payload: 'qz1a'}, {title: 'B. 伤心', payload: 'qz1b'},
-				{title: 'C. 生气', payload: 'qz1c'}])
+				[{title: 'A. Aereo', payload: 'incorrect'}, {title: 'B. Treno', payload: 'incorrect'},
+				{title: 'C. Bicicletta', payload: 'correct'}])
 			  }).then(()=>italianChecker(payload));
 		  }
 		if(payload === 'qz9') {
-			say(['我现在觉得很😡', 'I feel very 😡',  {attachment: 'audio',url: "https://bit.ly/3eH19qs"}]).then(()=>{
+			say(['\"Voglio un 🐶 per il mio compleanno\"', '\"I want a 🐶 for my birthday\"',  {attachment: 'audio',url: "https://bit.ly/2ZRCiwf"}]).then(()=>{
 				sendButton('Which choice could replace the emoji?',
-				[{title: 'A. 高兴', payload: 'qz1a'}, {title: 'B. 伤心', payload: 'qz1b'},
-				{title: 'C. 生气', payload: 'qz1c'}])
+				[{title: 'A. Gatto', payload: 'incorrect'}, {title: 'B. Cane', payload: 'correct'},
+				{title: 'C. Cavallo', payload: 'incorrect'}])
 			  });
 		  }
 		if(payload === 'qz10') {
-			say(['我现在觉得很😡', 'I feel very 😡',  {attachment: 'audio',url: "https://bit.ly/3eH19qs"}]).then(()=>{
+			say(['Ogni mattina io vado a 🏫', 'Every morning I go to 🏫',  {attachment: 'audio',url: "https://bit.ly/3hxUQYp"}]).then(()=>{
 				sendButton('Which choice could replace the emoji?',
-				[{title: 'A. 高兴', payload: 'qz1a'}, {title: 'B. 伤心', payload: 'qz1b'},
-				{title: 'C. 生气', payload: 'qz1c'}])
+				[{title: 'A. Banca', payload: 'incorrect'}, {title: 'B. Spiaggia', payload: 'incorrect'},
+				{title: 'C. Scuola', payload: 'correct'}])
 			  });
 		  }
 		if(payload === 'qz11') {
-			say(['我现在觉得很😡', 'I feel very 😡',  {attachment: 'audio',url: "https://bit.ly/3eH19qs"}]).then(()=>{
+			say(['Mai ho visto un 🐬 saltando dall\'acqua.', 'I have never seen a 🐬 jumping out of the water.',  {attachment: 'audio',url: "https://bit.ly/2OPSMP6"}]).then(()=>{
 				sendButton('Which choice could replace the emoji?',
-				[{title: 'A. 高兴', payload: 'qz1a'}, {title: 'B. 伤心', payload: 'qz1b'},
-				{title: 'C. 生气', payload: 'qz1c'}])
+				[{title: 'A. Delfino', payload: 'correct'}, {title: 'B. Tigre', payload: 'incorrect'},
+				{title: 'C. Maiale', payload: 'incorrect'}])
 			  });
 		  }
 		if(payload === 'qz12') {
-			say(['我现在觉得很😡', 'I feel very 😡',  {attachment: 'audio',url: "https://bit.ly/3eH19qs"}]).then(()=>{
+			say(['A chi non piace un pezzo di 🍰?', 'Who doesn\'t like a piece of 🍰?',  {attachment: 'audio',url: "https://bit.ly/3fVDmo8"}]).then(()=>{
 				sendButton('Which choice could replace the emoji?',
-				[{title: 'A. 高兴', payload: 'qz1a'}, {title: 'B. 伤心', payload: 'qz1b'},
-				{title: 'C. 生气', payload: 'qz1c'}])
+				[{title: 'A. Pomodoro', payload: 'incorrect'}, {title: 'B. Torta', payload: 'correct'},
+				{title: 'C. Biscotto', payload: 'incorrect'}])
 			  });
 		  }
 	
