@@ -1675,6 +1675,7 @@ const state = (payload, say, sendButton) => {
 			{title: 'B. 🇪🇸', payload: 'ESqz' }, {title: 'C. 🇮🇹', payload: 'ITqz'}])
 		}
 	
+
 		//****CHINESE SECTION****//
 
 		if(payload === 'CHqz') {
@@ -1781,6 +1782,61 @@ const state = (payload, say, sendButton) => {
 				{title: 'C. Biscotto', payload: 'incorrect'}])
 			  });
 		  }
+	
+	
+		//**** SPANISH SECTION ****//
+
+		if(payload === 'ESqz') {
+		  sendButton('Please choose a question 🤗',
+		  [{title: '1️', payload: 'qz13'}, {title: '2', payload: 'qz14'},
+		  {title: '3', payload: 'qz15'}, {title: '4', payload: 'qz16'},
+		  {title: '4', payload: 'qz17'}, {title: '5', payload: 'qz18'}]);
+	 	 }
+
+		// *************************************** SPANISH QUIZ GENERATORS *************************************//
+		if(payload === 'qz13') {
+			say(['Me siento 😀', 'I feel 😀 ',  {attachment: 'audio',url: "https://bit.ly/3hBQ0cv"}]).then(()=>{
+				sendButton('Which choice could replace the emoji?',
+				[{title: 'A. enojado', payload: 'incorrect'}, {title: 'B. triste', payload: 'incorrect'},
+				{title: 'C. contento', payload: 'correct'}])
+			  });
+		  }
+		  if(payload === 'qz14') {
+			  say(['Mi animal favorito es el 🐴', 'My favorite animal is the 🐴',  {attachment: 'audio',url: "https://bit.ly/3jHD86m"}]).then(()=>{
+				  sendButton('Which choice could replace the emoji?',
+				  [{title: 'A. tigre', payload: 'incorrect'}, 
+				  {title: 'B. pollo', payload: 'incorrect'}, {title: 'C. caballo', payload: 'correct'}])
+			  });
+		  }
+		  if(payload === 'qz15') {
+			  say(['Tomo 🥛 con mi 🍪', 'I drink 🥛 with my 🍪',  {attachment: 'audio',url: "https://bit.ly/3hD25y3"}]).then(()=>{
+				  sendButton('Which choice could replace the emoji?',
+				  [{title: 'A. leche; galleta', payload: 'correct'}, {title: 'B. cerveza; tomate', payload: 'incorrect'},
+				  {title: 'C. pastel; manzana', payload: 'incorrect'}])
+			  });
+		  }
+		  if(payload === 'qz16') {
+			  say(['Uso mi 🚲 para llegar al trabajo', 'I use my 🚲 to arrive to work',  {attachment: 'audio',url: "https://bit.ly/32YxU03"}]).then(()=>{
+				  sendButton('Which choice could replace the emoji?',
+				  [{title: 'A. avion', payload: 'incorrect'}, {title: 'B. bicicleta', payload: 'correct'},
+				  {title: 'C. coche', payload: 'incorrect'}])
+			  });
+		  }
+		  if(payload === 'qz17') {
+			  say(['Perdí a mi 🐶 y ahora estoy 😢', 'I lost my 🐶, and now I am 😢',  {attachment: 'audio',url: "https://bit.ly/2WY5i3u"}]).then(()=>{
+				  sendButton('Which choice could replace the emoji?',
+				  [{title: 'A. gato； feliz', payload: 'incorrect'}, {title: 'B. perro； triste', payload: 'correct'},
+				  {title: 'C. abeja； asustado', payload: 'incorrect'}])
+			  });
+		  }
+		  if(payload === 'qz18') {
+			  say(['Veo un 🐬 el la 🏖️', 'I see a 🐬 at the 🏖️',  {attachment: 'audio',url: "https://bit.ly/3hHfyFk"}]).then(()=>{
+				  sendButton('Which choice could replace the emoji?',
+				  [{title: 'A. mono； banco', payload: 'incorrect'}, {title: 'B. delfín； playa', payload: 'correct'},
+				  {title: 'C. pez；escuela', payload: 'incorrect'}])
+			  });
+		  }
+		  
 		
 		// quiz checker
 		if(payload === 'correct'){
