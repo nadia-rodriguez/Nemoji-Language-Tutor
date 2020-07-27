@@ -643,35 +643,122 @@ const state = (payload, say, sendButton) => {
 			say(["🐇", "Bunny", 'conejito', {attachment: 'audio',url: "https://bit.ly/3ixIm4e"}]).then(()=>{backtrack('a2', 'c8')});
 		}
 
-		// ************************ WORKING ON: Different Languages for Chicken (c9)*********************//
-		if (payload === 'c8') {
-			chooseLanguage('c8')
+		// ************************ Different Languages for Chicken (c9)********************* //
+		if (payload === 'c9') {
+			chooseLanguage('c9')
 		}
-		// Arabic for Bunny
-		if(payload === 'ARc8') {
-			say(["🐇", "Bunny", "أرنب", {attachment: 'audio',url: "https://bit.ly/3gwGWVA"}]).then(()=>{backtrack('a2', 'c8')});
+		// Arabic for Chicken
+		if(payload === 'ARc9') {
+			say(["🐔", "Chicken", "أرنب", {attachment: 'audio',url: "https://bit.ly/3gwGWVA"}]).then(()=>{backtrack('a2', 'c9')});
 		}
-		// Chinese for Bunny
-		if(payload === 'CNc8') {
-			say(["🐇", "Bunny", "兔子", {attachment: 'audio',url: "https://bit.ly/2VIwEtH"}]).then(()=>{backtrack('a2', 'c8')});
+		// Chinese for Chicken
+		if(payload === 'CNc9') {
+			say(["🐔", "Chicken", "鸡", {attachment: 'audio',url: "https://bit.ly/2BYyqzS"}]).then(()=>{backtrack('a2', 'c9')});
 		}
-		// French for Bunny
-		if(payload === 'FRc8') {
-			say(["🐇", "Bunny", "lapin", {attachment: 'audio',url: "https://bit.ly/2CTFTkk"}]).then(()=> {backtrack('a2', 'c8')});
+		// French for Chicken
+		if(payload === 'FRc9') {
+			say(["🐔", "Chicken", "poulet", {attachment: 'audio',url: "https://bit.ly/2WYcDQi"}]).then(()=> {backtrack('a2', 'c9')});
 		}
-		// Italian for Bunny
-		if(payload === 'ITc8') {
-			say(["🐇", "Bunny", 'coniglio', {attachment: 'audio',url: "https://bit.ly/2NXadNh"}]).then(()=>{backtrack('a2', 'c8')});
+		// Italian for Chicken
+		if(payload === 'ITc9') {
+			say(["🐔", "Chicken", 'pollo', {attachment: 'audio',url: "https://bit.ly/2VJmOb5"}]).then(()=>{backtrack('a2', 'c9')});
 		}
-		// Japanese for Bunny
-		if(payload === 'JPc8') {
-			say(["🐇", "Bunny", 'うさぎちゃん', {attachment: 'audio',url: "https://bit.ly/3dYJpqt"}]).then(()=>{backtrack('a2', 'c8')});
+		// Japanese for Chicken
+		if(payload === 'JPc9') {
+			say(["🐔", "Chicken", 'チキン', {attachment: 'audio',url: "https://bit.ly/2NUvpmS"}]).then(()=>{backtrack('a2', 'c9')});
 		}
-		// Spanish for Bunny
-		if(payload === 'ESc8') {
-			say(["🐇", "Bunny", 'conejito', {attachment: 'audio',url: "https://bit.ly/3ixIm4e"}]).then(()=>{backtrack('a2', 'c8')});
+		// Spanish for Chicken
+		if(payload === 'ESc9') {
+			say(["🐔", "Chicken", 'pollo', {attachment: 'audio',url: "https://bit.ly/31O6kCc"}]).then(()=>{backtrack('a2', 'c9')});
 		}
 
+		// ************************ Different Languages for Snake (c10)********************* //
+		if (payload === 'c10') {
+			chooseLanguage('c10')
+		}
+		// Arabic for Snake
+		if(payload === 'ARc10') {
+			say(["🐍", "Snake", "ثعبان", {attachment: 'audio',url: "https://bit.ly/2VQEcum"}]).then(()=>{backtrack('a2', 'c10')});
+		}
+		// Chinese for Snake
+		if(payload === 'CNc10') {
+			say(["🐍", "Snake", "蛇", {attachment: 'audio',url: "https://bit.ly/31CB21a"}]).then(()=>{backtrack('a2', 'c10')});
+		}
+		// French for Snake
+		if(payload === 'FRc10') {
+			say(["🐍", "Snake", "serpent", {attachment: 'audio',url: "https://bit.ly/3jC5fEd"}]).then(()=> {backtrack('a2', 'c10')});
+		}
+		// Italian for Snake
+		if(payload === 'ITc10') {
+			say(["🐍", "Snake", 'serpente', {attachment: 'audio',url: "https://bit.ly/3gySasZ"}]).then(()=>{backtrack('a2', 'c10')});
+		}
+		// Japanese for Snake
+		if(payload === 'JPc10') {
+			say(["🐍", "Snake", 'ヘビ', {attachment: 'audio',url: "https://bit.ly/3gtRe91"}]).then(()=>{backtrack('a2', 'c10')});
+		}
+		// Spanish for Snake
+		if(payload === 'ESc10') {
+			say(["🐍", "Snake", 'culebra', {attachment: 'audio',url: "https://bit.ly/3iz0quM"}]).then(()=>{backtrack('a2', 'c10')});
+		}
+	
+		// ************************ Different Languages for Dolphin (c11)********************* //
+		if (payload === 'c11') {
+			chooseLanguage('c11')
+		}
+		// Arabic for Dolphin
+		if(payload === 'ARc11') {
+			say(["🐬", "Dolphin", "دولفين", {attachment: 'audio',url: "https://bit.ly/3f2X80I"}]).then(()=>{backtrack('a2', 'c11')});
+		}
+		// Chinese for Dolphin
+		if(payload === 'CNc11') {
+			say(["🐬", "Dolphin", "海豚", {attachment: 'audio',url: "https://bit.ly/2ZwjK38"}]).then(()=>{backtrack('a2', 'c11')});
+		}
+		// French for Dolphin
+		if(payload === 'FRc11') {
+			say(["🐬", "Dolphin", "dauphin", {attachment: 'audio',url: "https://bit.ly/2CGr5G1"}]).then(()=> {backtrack('a2', 'c11')});
+		}
+		// Italian for Dolphin
+		if(payload === 'ITc11') {
+			say(["🐬", "Dolphin", 'delfino', {attachment: 'audio',url: "https://bit.ly/3dVLRxS"}]).then(()=>{backtrack('a2', 'c11')});
+		}
+		// Japanese for Dolphin
+		if(payload === 'JPc11') {
+			say(["🐬", "Dolphin", 'イルカ', {attachment: 'audio',url: "https://bit.ly/2YZ4r3M"}]).then(()=>{backtrack('a2', 'c11')});
+		}
+		// Spanish for Dolphin
+		if(payload === 'ESc11') {
+			say(["🐬", "Dolphin", 'delfín', {attachment: 'audio',url: "https://bit.ly/2BzpaT8"}]).then(()=>{backtrack('a2', 'c11')});
+		}
+	
+		// ************************ Different Languages for Bee (c12)********************* //
+		if (payload === 'c12') {
+			chooseLanguage('c12')
+		}
+		// Arabic for Bee
+		if(payload === 'ARc12') {
+			say(["🐝", "Bee", "نحلة", {attachment: 'audio',url: "https://bit.ly/38uUI8w"}]).then(()=>{backtrack('a2', 'c12')});
+		}
+		// Chinese for Bee
+		if(payload === 'CNc12') {
+			say(["🐝", "Bee", "蜜蜂", {attachment: 'audio',url: "https://bit.ly/2VGFNmK"}]).then(()=>{backtrack('a2', 'c12')});
+		}
+		// French for Bee
+		if(payload === 'FRc12') {
+			say(["🐝", "Bee", "abeille", {attachment: 'audio',url: "https://bit.ly/2WVmZ3p"}]).then(()=> {backtrack('a2', 'c12')});
+		}
+		// Italian for Bee
+		if(payload === 'ITc12') {
+			say(["🐝", "Bee", 'ape', {attachment: 'audio',url: "https://bit.ly/3e22ZC7"}]).then(()=>{backtrack('a2', 'c12')});
+		}
+		// Japanese for Bee
+		if(payload === 'JPc12') {
+			say(["🐝", "Bee", '蜂', {attachment: 'audio',url: "https://bit.ly/2Ay0KZv"}]).then(()=>{backtrack('a2', 'c12')});
+		}
+		// Spanish for Bee
+		if(payload === 'ESc12') {
+			say(["🐝", "Bee", 'abeja', {attachment: 'audio',url: "https://bit.ly/3gxuyFc"}]).then(()=>{backtrack('a2', 'c12')});
+		}
+	
 		//***********************************************************************************/
 		// ************************* Category 3: food (a3) ******************************//
 		//*********************************************************************************/
