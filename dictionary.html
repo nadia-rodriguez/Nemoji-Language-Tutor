@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+
+    <body>
+        <script type="text/javascript">
+            var dictionary = Object(); // Creating the object
+
+            // Adding key-value pairs to the dictionary object, where the key is "1s" and the value is "Ace of Spades"
+            dictionary["1s"] = "Ace of Spades";
+            dictionary["1h"] = "Ace of Hearts";
+            dictionary["1c"] = "Ace of Clubs";
+            dictionary["1d"] = "Ace of Diamonds";
+
+            // Printing out the value behind the key "1s"
+            console.log(dictionary["1s"]);
+
+            // Looping through all of the key-value pairs in the dictionary.
+            for (var i in dictionary){
+                console.log(dictionary[i]);
+            }
+
+            // Deleting a key-value pair.
+            delete dictionary["1s"];
+
+            // Checking to see if deletion was successful.
+            if(dictionary["1s"]){
+                console.log("Haha you have utterly failed.");
+            }else{
+                console.log("Success!");
+            }
+        </script>
+    </body>
+</html>

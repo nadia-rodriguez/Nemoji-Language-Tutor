@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+
+    <body>
+        <script type="text/javascript">
+            var dictionary = Object();
+
+            dictionary[1] = "Ace of Spades";
+            dictionary[2] = "Ace of Hearts";
+            dictionary[3] = "Ace of Clubs";
+            dictionary[4] = "Ace of Diamonds";
+
+            for (var i = 0; i < 10; i++){
+                var random = Math.floor(Math.random()*4) + 1;
+                console.log(dictionary[random]);
+                console.log("ba");
+            }
+
+            var stringify = JSON.stringify(dictionary);
+            console.log(stringify);
+
+
+            
+
+            // dictionary
+            // 52 array
+
+            // split
+            // shuffle (26 cards)
+            // distribute
+            // shuffle - 3 (23 cards)
+
+            // The above: create a dictionary with image values for the cards, create an array of 52 cards,
+            // Split the array into two of 26, shuffle the array, distribute by looping in order through
+            // the new arrays of 26 and change the values at those positions to 0 while creating a new
+            // array that represents the cards the user can see.
+
+            var deck = [1, 2, 3, 4, 5]
+
+            //create array with 3 spaces
+            for (var i = 0; i < 3; i++){
+                //
+                //array[i] = 
+            }
+            var given = [1, 2]
+
+            // Stringify
+            var deckstring = JSON.stringify(deck);
+            var givenstring = JSON.stringify(given);
+
+            // Passing the strings into the payload with the separator "-"
+            var payload = deckstring + "-" + givenstring;
+
+            // Finding where the separator occurs
+            var here = payload.indexOf("-");
+
+            console.log(here);
+
+            // Splitting the payload back into two original strings.
+            var testingpart1 = payload.substring(0,here);
+            var testingpart2 = payload.substring(here+1 ,payload.length);
+
+            // Parsing to recreate the arrays passed into the payload.
+            var array1 = JSON.parse(testingpart1);
+            var array2 = JSON.parse(testingpart2);
+
+            console.log(array1[2]) //expect 3
+            console.log(array2[1]) //expect 2
+
+            // ---- round 2 ---
+
+
+
+
+
+            // -------------
+
+            // payload = "stringify.(shuffle) + distribute"
+
+            // button is clicked
+            
+        </script>
+    </body>
+</html>
