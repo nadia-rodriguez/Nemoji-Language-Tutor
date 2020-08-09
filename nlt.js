@@ -7,7 +7,7 @@ const start = (say, sendButton) => {
 	'into the vocabulary section and a short quiz to test what you learned. 🈶 📝  ',
 	'Nemoji will teach you the most common words in six of the world\'s' +
 	' most popular languages using emojis!🌎🗣️']).then(() => {
-		 sendButton('Are you ready for Nemoji? ▶️❓ ', [{title: 'Yes', payload: '0'}, 'No']);
+		 sendButton('Are you ready? ▶️❓ ', [{title: 'Yes', payload: '0'}, 'No']);
 		});
 };
 
