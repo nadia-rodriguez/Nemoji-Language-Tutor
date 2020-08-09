@@ -2,7 +2,7 @@
 
 const start = (say, sendButton) => {
 	// use list to store conversation, easier to tell the difference
-	say(['Hello, welcome to Nemoji Language Center ! 😊 ',
+	say(['Welcome! 😊 ',
 	'For your information as starting, our learning sections will be seperated ' +
 	'into the vocabulary section and a short quiz to test what you learned. 🈶 📝  ',
 	'Nemoji will teach you the most common words in six of the world\'s' +
