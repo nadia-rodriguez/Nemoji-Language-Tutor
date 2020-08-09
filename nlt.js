@@ -6,7 +6,7 @@ const start = (say, sendButton) => {
 	'For your information as starting, our learning sections will be seperated ' +
 	'into the vocabulary section and a short quiz to test what you learned. 🈶 📝  ',
 	'Nemoji will teach you the most common words in six of the world\'s' +
-	' most popular languages using emojis!']).then(() => {
+	' most popular languages using emojis!🌎🗣️']).then(() => {
 		 sendButton('Are you ready for Nemoji? ▶️❓ ', [{title: 'Yes', payload: '0'}, 'No']);
 		});
 };
@@ -1863,9 +1863,8 @@ module.exports = {
 	title: 'Nemoji Language Tutor',
 	introduction: [
 		'Welcome to Nemoji Language Center!! 🎉  \n\nHello, I am your Nemoji Tutor.' +
-		'👋🏻 🤖\nFor your information, this is an application for learning foreign ' +
-		 'language using cute emojis. 🔤 🌏 \n If you are interested to learn ' +
-		 'many languages, here is the best place to start! 🏮📚'
+		'👋🏻 🤖\n If you are interested to learn ' +
+		 'many languages using cute emojis, here is the best place to start! 🏮📚'
 	],
 	start: start,
 	state: state
