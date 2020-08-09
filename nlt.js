@@ -1421,7 +1421,7 @@ const state = (payload, say, sendButton) => {
 		}
 		// Chinese for Beach
 		if (payload === 'CNf1'){
-			say(["🏖️", "Beach", '沙滩', {attachment: 'audio', url: "https://bit.ly/30AviD6"}]).then(()=>{backtrack('a5', 'f1')})
+			say(["🏖️", "Beach", '沙滩', {attachment: 'audio', url: "https://bit.ly/31OQ7wS"}]).then(()=>{backtrack('a5', 'f1')})
 		}
 		// French for Beach
 		if (payload === 'FRf1'){
@@ -1429,7 +1429,7 @@ const state = (payload, say, sendButton) => {
 		}
 		// Italian for Beach
 		if (payload === 'ITf1'){
-			say(["🏖️", "Beach", 'Spiaggia', {attachment: 'audio', url: "https://tinyurl.com/y3y4fcfu"}]).then(()=>{backtrack('a5', 'f1')})
+			say(["🏖️", "Beach", 'Spiaggia', {attachment: 'audio', url: "https://bit.ly/2Y0rJ8P"}]).then(()=>{backtrack('a5', 'f1')})
 		}
 		// Japanese for Beach
 		if (payload === 'JPf1'){
@@ -1589,7 +1589,7 @@ const state = (payload, say, sendButton) => {
 		}
 		// Chinese for stadium
 		if (payload === 'CNf7'){
-			say(["🏟️", "Stadium", '体育馆', {attachment: 'audio', url: "https://bit.ly/3f2ZQmQ"}]).then(()=>{backtrack('a5', 'f7')})
+			say(["🏟️", "Stadium", '体育馆', {attachment: 'audio', url: "https://bit.ly/33GVEGr"}]).then(()=>{backtrack('a5', 'f7')})
 		}
 		// French for stadium
 		if (payload === 'FRf7'){
@@ -1649,7 +1649,7 @@ const state = (payload, say, sendButton) => {
 		}
 		// French for Desert
 		if (payload === 'FRf9'){
-			say(["🏜️", "Desert", 'Désert/déserte', {attachment: 'audio', url: "https://bit.ly/3dYKoqA"}]).then(()=>{backtrack('a5', 'f9')})
+			say(["🏜️", "Desert", 'Désert/déserte', {attachment: 'audio', url: "https://bit.ly/3gN8Kpq"}]).then(()=>{backtrack('a5', 'f9')})
 		}
 		// Italian for Desert
 		if (payload === 'ITf9'){
@@ -1682,7 +1682,7 @@ const state = (payload, say, sendButton) => {
 		  sendButton('Please choose a question🤗',
 		  [{title: '1️', payload: 'qz1'}, {title: '2', payload: 'qz2'},
 		  {title: '3', payload: 'qz3'}, {title: '4', payload: 'qz4'},
-		  {title: '4', payload: 'qz5'}, {title: '5', payload: 'qz6'}]);
+		  {title: '5', payload: 'qz5'}, {title: '6', payload: 'qz6'}]);
 	 	 }
 
 		// ***************************************CHINESE QUIZ GENERATORS*************************************//
@@ -1736,7 +1736,7 @@ const state = (payload, say, sendButton) => {
 		  sendButton('Please choose a question🤗',
 		  [{title: '1️', payload: 'qz7'}, {title: '2', payload: 'qz8'},
 		  {title: '3', payload: 'qz9'}, {title: '4', payload: 'qz10'},
-		  {title: '4', payload: 'qz11'}, {title: '5', payload: 'qz12'}]);
+		  {title: '5', payload: 'qz11'}, {title: '6', payload: 'qz12'}]);
 	 	 }
 
 		// ***************************************ITALIAN QUIZ GENERATORS*************************************//
@@ -1790,7 +1790,7 @@ const state = (payload, say, sendButton) => {
 		  sendButton('Please choose a question 🤗',
 		  [{title: '1️', payload: 'qz13'}, {title: '2', payload: 'qz14'},
 		  {title: '3', payload: 'qz15'}, {title: '4', payload: 'qz16'},
-		  {title: '4', payload: 'qz17'}, {title: '5', payload: 'qz18'}]);
+		  {title: '5', payload: 'qz17'}, {title: '6', payload: 'qz18'}]);
 	 	 }
 
 		// *************************************** SPANISH QUIZ GENERATORS *************************************//
