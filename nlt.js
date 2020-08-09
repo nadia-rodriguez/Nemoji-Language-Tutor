@@ -23,7 +23,7 @@ const state = (payload, say, sendButton) => {
 
 	// help user choose a language to learn the chosen word in
 	function chooseLanguage(wordID) {
-		sendButton('What language would you like to learn the expression in?',
+		sendButton('What language would you like to learn the word in?',
 			[{title: 'A. 🇦🇪', payload: 'AR' + wordID}, {title: 'B. 🇨🇳', payload: 'CN' + wordID},
 			{title: 'C. 🇫🇷', payload: 'FR' + wordID}, {title: 'D. 🇮🇹', payload: 'IT' + wordID},
 			{title: 'E. 🇯🇵', payload: 'JP' + wordID}, {title: 'F. 🇪🇸', payload: 'ES' + wordID}]
@@ -1403,7 +1403,7 @@ const state = (payload, say, sendButton) => {
 		//*********************************************************************************/
 		// all location payload starts with f
 		if (payload === 'a5') {
-			sendButton('What expression would you like to learn?',
+			sendButton('Which location would you like to learn?',
 			[{title: 'A. 🏖️', payload: 'f1'}, {title: 'B. 🏥', payload: 'f2'},
 			{title: 'C. 🚉', payload: 'f3'}, {title: 'D. 🏫', payload: 'f4'},
 			{title: 'E. 🏦', payload: 'f5'}, {title: 'F. 🌋', payload: 'f6'}, 
