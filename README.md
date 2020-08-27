@@ -1,7 +1,7 @@
-# Naut-Internship
+# Nemoji Language Tutor
 
 ## Software handle
-### Type helloworld bingli on Nemobot
+### Type helloworld nadiarodriguez on Nemobot
 
 ## About
 The Nemoji Language Tutor is a facebook messenger based chatbot that teaches users common words in 6 different languages. Users can choose from 5 categories of words (food, animal, transportaion, expressions, and location) and learn the vocabularies in them in 6 popular languages (Arabic, Chinese, French, Italian, Japanese, and Spanish). In addition to having audio with pronunciations, what makes Nemoji different from other language-learning chatbots is its frequent use of cute emojis. We also have a quiz section that not only test the users' learning, but also teaches them how to apply their newly-learned vocabularies into sentence structure.
